@@ -45,6 +45,10 @@ Last Update: Feb 22, 2019
   margin: 0;
   padding: 0; }
 
+html { 
+  scroll-behavior: smooth; 
+} 
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
