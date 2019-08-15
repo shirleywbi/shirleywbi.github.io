@@ -12,11 +12,13 @@ Last Update: Feb 22, 2019
 
 + body
 
+    - 00.0 Variable Definitions
     - 01.0 Reboot CSS
     - 02.0 Spacing CSS
     - 03.0 Preloader CSS
     - 04.0 Heading CSS
     - 05.0 Backtotop CSS
+    - 05.1 GoToNext CSS
     - 06.0 Buttons CSS
     - 07.0 Header CSS
     - 08.0 Hero CSS
@@ -40,6 +42,11 @@ Last Update: Feb 22, 2019
 @import url(css/font-awesome.min.css);
 @import url(css/default-assets/themify-icons.css);
 @import url(css/style.css);
+/* :: 00.0 Variable Definitions */
+:root {
+  --primary-color: #fc6060;
+}
+
 /* :: 01.0 Reboot CSS */
 * {
   margin: 0;
@@ -414,6 +421,15 @@ input:required {
     background-color: #000000;
     color: #ffffff; }
 
+/* :: 5.1 GoToNext CSS */
+#scrollDown {
+  color: #fc6060;
+  font-size: 4rem;
+  font-weight: bold; 
+  bottom: 13%; }
+  #scrollDown:focus, #scrollDown:hover {
+    color: #ffffff; }
+
 /* :: 6.0 Buttons CSS */
 .btn:focus {
   box-shadow: none; }
@@ -722,6 +738,11 @@ input:required {
       .single-welcome-slide .welcome-text .hero-mail-contact:hover, .single-welcome-slide .welcome-text .hero-mail-contact:focus {
         color: #fc6060; }
 
+.nav-down-container {
+  text-align: center;
+  margin-bottom: 11%;
+}    
+
 /* :: 9.0 Footer CSS */
 .footer-content {
   padding: 20px 0; }
@@ -755,6 +776,10 @@ input:required {
         font-size: 12px; } }
     .footer-content .social-info a:hover, .footer-content .social-info a:focus {
       color: #fc6060; }
+
+.footer-logo {
+  font-size: 24px;
+}
 
 /* :: 10.0 Follow CSS */
 .single-instagram-item {
