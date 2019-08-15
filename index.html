@@ -70,10 +70,10 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li class="active"><a href="./index.html">Home</a></li>
-                                    <li><a href="./index.html">Projects</a></li>
-                                    <li><a href="./index.html">About</a></li>
-                                    <li><a href="./index.html">Contact</a></li>
+                                    <li class="active"><a href="#welcome-area">Home</a></li>
+                                    <li><a href="#projects-area">Projects</a></li>
+                                    <li><a href="#about-me-area">About</a></li>
+                                    <li><a href="#contact-us-area">Contact</a></li>
                                 </ul>
 
                                 <!-- Search Icon -->
@@ -89,7 +89,7 @@
     <!-- Header Area End -->
 
     <!-- Welcome Area Start -->
-    <section class="welcome-area">
+    <section class="welcome-area" id="welcome-area">
         <div class="welcome-slides owl-carousel">
             <!-- To add another slide, copy Single Slide below -->
             <!-- Single Slide -->
@@ -115,77 +115,79 @@
     </section>
     <!-- Welcome Area End -->
 
-    <!-- Gallery Area Start -->
-    <div class="alime-portfolio-area section-padding-80 clearfix">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h2>Projects</h2>
+    <!-- Projects Area Start -->
+    <section class="projects-area clearfix" id="projects-area">
+        <div class="alime-portfolio-area section-padding-80 clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                            <h2>Projects</h2>
+                        </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Projects Menu -->
+                        <div class="alime-projects-menu">
+                            <div class="portfolio-menu text-center">
+                                <button class="btn active" data-filter="*">All</button>
+                                <button class="btn" data-filter=".human">Human</button>
+                                <button class="btn" data-filter=".nature">Nature</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row alime-portfolio">
+                    <!-- Single Project Item -->
+                    <!-- TODO: Add a mask so that images are restricted to the same size for all -->
+                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="single-portfolio-content">
+                            <img src="img/bg-img/3.jpg" alt="">
+                            <div class="hover-content">
+                                <a href="img/bg-img/3.jpg" class="portfolio-img">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Project Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="single-portfolio-content">
+                            <img src="img/bg-img/4.jpg" alt="">
+                            <div class="hover-content">
+                                <a href="img/bg-img/4.jpg" class="portfolio-img">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Project Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="single-portfolio-content">
+                            <img src="img/bg-img/5.jpg" alt="">
+                            <div class="hover-content">
+                                <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Uncomment the day you have a lot more projects -->
+                <!-- <div class="row">
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
+                        <a href="#" class="btn alime-btn btn-2 mt-15">View More</a>
+                    </div>
+                </div> -->
             </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <!-- Projects Menu -->
-                    <div class="alime-projects-menu">
-                        <div class="portfolio-menu text-center">
-                            <button class="btn active" data-filter="*">All</button>
-                            <button class="btn" data-filter=".human">Human</button>
-                            <button class="btn" data-filter=".nature">Nature</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row alime-portfolio">
-                <!-- Single Gallery Item -->
-                <!-- TODO: Add a mask so that images are restricted to the same size for all -->
-                <div class="col-12 col-sm-6 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/3.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/3.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-4 single_gallery_item video human mb-30 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/4.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/4.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Gallery Item -->
-                <div class="col-12 col-sm-6 col-lg-4 single_gallery_item country mb-30 wow fadeInUp" data-wow-delay="500ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/5.jpg" alt="">
-                        <div class="hover-content">
-                            <a href="img/bg-img/5.jpg" class="portfolio-img">+</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Uncomment the day you have a lot more projects -->
-            <!-- <div class="row">
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
-                    <a href="#" class="btn alime-btn btn-2 mt-15">View More</a>
-                </div>
-            </div> -->
         </div>
-    </div>
-    <!-- Gallery Area End -->
+    </section>
+    <!-- Projects Area End -->
 
     <!-- About Me Start -->
     <!-- TODO -->
-    <section class="why-choose-us-area bg-gray section-padding-80-0 clearfix">
+    <section class="about-me-area bg-gray section-padding-80-0 clearfix" id="about-me-area">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -196,7 +198,7 @@
             </div>
 
             <div class="row">
-                <!-- Single Why Choose Area -->
+                <!-- Single About Me Area -->
                 <div class="col-md-6 col-lg-4">
                     <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
                         <div class="chosse-us-icon">
@@ -207,7 +209,7 @@
                     </div>
                 </div>
 
-                <!-- Single Why Choose Area -->
+                <!-- Single About Me Area -->
                 <div class="col-md-6 col-lg-4">
                     <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
                         <div class="chosse-us-icon">
@@ -218,7 +220,7 @@
                     </div>
                 </div>
 
-                <!-- Single Why Choose Area -->
+                <!-- Single About Me Area -->
                 <div class="col-md-6 col-lg-4">
                     <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
                         <div class="chosse-us-icon">
@@ -234,7 +236,7 @@
     <!-- About Me End -->
 
     <!-- Contact Us Start -->
-    <section class="why-choose-us-area section-padding-80-0 clearfix">
+    <section class="contact-us-area section-padding-80-0 clearfix" id="contact-us-area">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
