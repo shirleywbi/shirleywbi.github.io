@@ -779,7 +779,11 @@ input:required {
 
 .footer-logo {
   font-size: 24px;
-}
+  margin-right: 8px; }
+  .fa-envelope.footer-logo {
+    font-size:20.56px;
+  }
+
 
 /* :: 10.0 Follow CSS */
 .single-instagram-item {
