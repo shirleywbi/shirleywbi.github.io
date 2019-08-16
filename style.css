@@ -172,6 +172,9 @@ button.mfp-arrow {
 .bg-gray {
   background-color: #f7f7f7 !important; }
 
+.bg-black {
+  background-color: black !important; }
+
 textarea:focus,
 input:focus {
   outline: none; }
@@ -751,7 +754,7 @@ input:required {
     z-index: 1; }
     .footer-content .copywrite-text p {
       margin-bottom: 0;
-      color: #252525; }
+      color: white; }
       @media only screen and (max-width: 767px) {
         .footer-content .copywrite-text p {
           font-size: 12px; } }
@@ -783,7 +786,6 @@ input:required {
   .fa-envelope.footer-logo {
     font-size:20.56px;
   }
-
 
 /* :: 10.0 Follow CSS */
 .single-instagram-item {
