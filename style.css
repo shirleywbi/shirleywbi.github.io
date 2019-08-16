@@ -1668,6 +1668,10 @@ input:required {
     .contact-area .contact-info a {
       font-size: 14px; } }
 
+.center-text {
+  text-align: center;
+}
+
 #map {
   height: 600px;
   width: 100%; }
