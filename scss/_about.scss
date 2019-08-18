@@ -124,7 +124,7 @@
     z-index: 1;
     margin-top: 50px;
 
-    .chosse-us-icon {
+    .about-me-icon {
         @include transition-duration(800ms);
         height: 76px;
         width: 76px;
@@ -158,7 +158,7 @@
     &:focus {
         background-color: $primary;
 
-        .chosse-us-icon {
+        .about-me-icon {
             background-color: $dark;
             box-shadow: 0 5px 15px 2px rgba(255, 255, 255, 0.15);
         }
