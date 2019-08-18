@@ -152,7 +152,7 @@ ul {
   width: 100%;
   top: 20px;
   width: 30px;
-  background: var(--primary-color);
+  background: var(--primary-color-dark);
   height: 30px;
   line-height: 30px; }
 
@@ -162,7 +162,7 @@ img.mfp-img {
 
 button.mfp-close,
 button.mfp-arrow {
-  background: var(--primary-color); }
+  background: var(--primary-color-dark); }
 
 .mfp-bottom-bar {
   display: none !important; }
