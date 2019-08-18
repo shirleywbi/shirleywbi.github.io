@@ -40,7 +40,6 @@ Last Update: Feb 22, 2019
 @import url(css/owl.carousel.min.css);
 @import url(css/magnific-popup.css);
 @import url(css/font-awesome.min.css);
-@import url(css/default-assets/themify-icons.css);
 @import url(css/style.css);
 /* :: 00.0 Variable Definitions */
 :root {
@@ -432,8 +431,7 @@ input:required {
 /* :: 5.1 GoToNext CSS */
 #scrollDown {
   color: var(--icon-color);
-  font-size: 4rem;
-  font-weight: bold; 
+  font-size: 8rem;
   bottom: 13%; }
   #scrollDown:focus, #scrollDown:hover {
     color: var(--icon-color-black); }
