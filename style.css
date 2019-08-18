@@ -405,13 +405,13 @@ input:required {
 #scrollUp {
   position: fixed;
   right: 40px;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 40px;
   width: 40px;
   height: 40px;
   bottom: 40px;
   background-color: var(--primary-color-dark);
-  color: #ffffff;
+  color: var(--font-color-dark);
   text-align: center;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
