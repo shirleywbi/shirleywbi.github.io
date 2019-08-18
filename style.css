@@ -410,7 +410,7 @@ input:required {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  background-color: var(--icon-color);
+  background-color: var(--primary-color-dark);
   color: #ffffff;
   text-align: center;
   -webkit-transition-duration: 500ms;
@@ -454,19 +454,19 @@ input:required {
   text-transform: capitalize;
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid var(--icon-color);
+  border: 2px solid var(--primary-color-dark);
   border-radius: 60px;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms; }
   .alime-btn.btn-2 {
-    color: #252525; }
+    color: var(--font-color-dark); }
   .alime-btn:focus, .alime-btn:hover {
     font-weight: 500;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-    background-color: var(--icon-color);
-    color: #ffffff; }
+    background-color: var(--primary-color-dark);
+    color: var(--font-color-dark); }
 
 .badges-btn {
   background-color: #ebebeb;
@@ -797,53 +797,6 @@ input:required {
   width: 70px;
   background-color: var(--primary-color);
   margin-bottom: 30px; }
-
-.about-video-area {
-  position: relative;
-  z-index: 1;
-  border-radius: 10px; }
-  .about-video-area img {
-    -webkit-box-shadow: 3px 0 24px rgba(0, 0, 0, 0.15);
-    box-shadow: 3px 0 24px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    border-radius: 10px; }
-  .about-video-area .video-icon a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 99;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    background-color: var(--primary-color);
-    text-align: center;
-    line-height: 56px;
-    font-size: 38px;
-    border-radius: 50%; }
-    .about-video-area .video-icon a::after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 0%;
-      border-radius: 50%;
-      background-color: transparent;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      border: 2px solid var(--primary-color);
-      -webkit-animation: video-icon 1200ms linear infinite;
-      animation: video-icon 1200ms linear infinite;
-      z-index: -10; }
-    .about-video-area .video-icon a:hover, .about-video-area .video-icon a:focus {
-      background-color: #000000; }
-      .about-video-area .video-icon a:hover::after, .about-video-area .video-icon a:focus::after {
-        border: 2px solid #000000; }
 
 @-webkit-keyframes video-icon {
   0% {
