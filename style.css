@@ -43,7 +43,6 @@ Last Update: Feb 22, 2019
   --primary-color-dark: #ffae00;
   --banner-color: #ffcb00;
   --icon-color: #996633;
-  /* --icon-color: coral; */
   --icon-color-black: black;
   --gray: #6b6b6b;
   --font-color: #636363;
@@ -461,11 +460,11 @@ input:required {
   transition-duration: 500ms; }
   .alime-btn.btn-2 {
     color: var(--font-color-dark); }
-  .alime-btn:focus, .alime-btn:hover {
+  .alime-btn:hover {
     font-weight: 500;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-    background-color: var(--primary-color-dark);
+    background-color: var(--primary-color);
     color: var(--font-color-dark); }
 
 .badges-btn {
@@ -954,7 +953,7 @@ input:required {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
     z-index: 10; }
@@ -985,6 +984,16 @@ input:required {
     visibility: visible; }
     .single-portfolio-content:hover .hover-content a, .single-portfolio-content:focus .hover-content a {
       margin-top: -26px; }
+
+.hover-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-text {
+  color: white;
+}
 
 /* :: 16.0 Contact CSS */
 .alime-contact-form .form-control {
