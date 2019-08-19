@@ -35,8 +35,6 @@ Last Update: Feb 22, 2019
 @import url(css/default-assets/classy-nav.css);
 @import url(css/owl.carousel.min.css);
 @import url(css/magnific-popup.css);
-@import url(css/font-awesome.min.css);
-@import url(css/style.css);
 /* :: 00.0 Variable Definitions */
 :root {
   --primary-color: #ffcb00;
@@ -430,8 +428,8 @@ input:required {
 /* :: 5.1 GoToNext CSS */
 #scrollDown {
   color: var(--icon-color-black);
-  font-size: 8rem;
-  bottom: 13%; }
+  font-size: 7rem;
+  bottom: 6%; }
   #scrollDown:focus, #scrollDown:hover {
     color: var(--icon-color-black); }
 
