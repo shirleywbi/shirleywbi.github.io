@@ -43,15 +43,33 @@
         });
     }
 
+    // EFFECTS: loads more projects, resizes the section, and hides show more button
+    $('#view-more-projects').on('click', function () {
+        // Loads more projects
+        $('.more-projects').removeClass('hide');
+        
+        // Resizes the section
+        let currHeight = $('#alime-portfolio').height();
+        let maxHeight = Math.max.apply(null, $('.more-projects').map(function () {
+            return $(this).height();
+        }).get());
+        $('#alime-portfolio').height(currHeight + maxHeight);
+        
+        // Hides show more button
+        $('#view-more-projects').hide('slow');
+    });
+
     // ***********************************
     // :: 5.9 NavBar Active Code
     // ***********************************
     
+    // Dynamic changes for navigation bar
     $(window).on('scroll', function () {
         let scrollOffset = $(window).scrollTop();
+        let navHeight = $('.classy-nav-container').height();
         let welcomeSection = $('#welcome').offset().top;
-        let projectSection = $('#projects').offset().top;
-        let aboutSection = $('#about-me').offset().top;
+        let projectSection = $('#projects').offset().top - navHeight;
+        let aboutSection = $('#about-me').offset().top - navHeight;
         let contactSection = $('#contact-us').offset().top;
         
         let scrollHeight = $(document).height();

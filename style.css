@@ -24,6 +24,7 @@ Last Update: Feb 22, 2019
     - 08.0 Hero CSS
     - 09.0 Footer CSS
     - 11.0 About CSS
+    - 14.0 Gallery Hiding CSS
     - 15.0 Gallery CSS
     - 16.0 Contact CSS
 
@@ -833,6 +834,13 @@ input:required {
     .why-choose-us-content:hover p, .why-choose-us-content:focus h4,
     .why-choose-us-content:focus p {
       color: var(--font-color-dark); }
+
+/* :: 14.0 Gallery Hiding CSS */
+.hide {
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+}
 
 /* :: 15.0 Gallery CSS */
 .alime-portfolio-area {
