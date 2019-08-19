@@ -666,6 +666,10 @@ input:required {
   @media only screen and (max-width: 767px) {
     .single-welcome-slide {
       height: 600px; } }
+  @media only screen and (max-width: 575px) {
+    .single-welcome-slide {
+      height: 600px; } }
+            
   .single-welcome-slide .welcome-text {
     position: relative;
     z-index: 1; }
@@ -689,8 +693,7 @@ input:required {
       display: block; }
     .single-welcome-slide .welcome-text {
       color: #ffffff;
-      font-style: italic;
-      text-decoration: underline; }
+      font-style: italic; }
       .single-welcome-slide .welcome-text, .single-welcome-slide .welcome-text {
         color: var(--banner-color); }
 
