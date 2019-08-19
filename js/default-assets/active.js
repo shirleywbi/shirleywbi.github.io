@@ -1,13 +1,11 @@
 (function ($) {
     'use strict';
 
-    var alime_window = $(window);
-
     // ****************************
     // :: 1.0 Preloader Active Code
     // ****************************
 
-    alime_window.on('load', function () {
+    $(window).on('load', function () {
         $('#preloader').fadeOut('1000', function () {
             $(this).remove();
         });
@@ -49,8 +47,8 @@
     // :: 5.9 NavBar Active Code
     // ***********************************
     
-    alime_window.on('scroll', function () {
-        let scrollOffset = alime_window.scrollTop();
+    $(window).on('scroll', function () {
+        let scrollOffset = $(window).scrollTop();
         let welcomeSection = $('#welcome').offset().top;
         let projectSection = $('#projects').offset().top;
         let aboutSection = $('#about-me').offset().top;
@@ -94,8 +92,8 @@
     // :: 8.0 Stick Active Code
     // ************************
 
-    alime_window.on('scroll', function () {
-        if (alime_window.scrollTop() > 0) {
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 0) {
             $('.main-header-area').addClass('sticky');
         } else {
             $('.main-header-area').removeClass('sticky');
@@ -131,7 +129,7 @@
     // ***********************
     // :: 11.0 WOW Active Code
     // ***********************
-    if (alime_window.width() > 767) {
+    if ($(window).width() > 767) {
         new WOW().init();
     }
 
@@ -148,7 +146,7 @@
     // :: 13.0 Scrollup Active Code
     // ****************************
     if ($.fn.scrollUp) {
-        alime_window.scrollUp({
+        $(window).scrollUp({
             scrollSpeed: 1000,
             scrollText: '<i class="fa fa-angle-up"</i>'
         });
