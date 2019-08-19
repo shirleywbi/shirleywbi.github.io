@@ -18,7 +18,7 @@ Last Update: Feb 22, 2019
     - 03.0 Preloader CSS
     - 04.0 Heading CSS
     - 05.0 Backtotop CSS
-    - 05.1 GoToNext CSS
+    - 05.1 DownToNext CSS
     - 06.0 Buttons CSS
     - 07.0 Header CSS
     - 08.0 Hero CSS
@@ -425,11 +425,18 @@ input:required {
     background-color: #000000;
     color: #ffffff; }
 
-/* :: 5.1 GoToNext CSS */
+/* :: 5.1 DownToNext CSS */
 #scrollDown {
   color: var(--icon-color-black);
   font-size: 7rem;
-  bottom: 6%; }
+  bottom: 6%;
+  text-align: center;
+  justify-content: center; }
+  @media only screen and (max-width: 767px) {
+    #scrollDown {
+      font-size: 4rem;
+    }
+  }
   #scrollDown:focus, #scrollDown:hover {
     color: var(--icon-color-black); }
 
@@ -696,8 +703,9 @@ input:required {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 880px;
-  background-color: var(--banner-color); }
+  height: 800px;
+  background-color: var(--banner-color); 
+  background-image: url(img/bg-img/sbi-banner.png); }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-welcome-slide {
       height: 750px; } }
@@ -728,11 +736,11 @@ input:required {
       color: black;
       margin-bottom: 50px;
       display: block; }
-    .single-welcome-slide .welcome-text .hero-mail-contact {
+    .single-welcome-slide .welcome-text {
       color: #ffffff;
       font-style: italic;
       text-decoration: underline; }
-      .single-welcome-slide .welcome-text .hero-mail-contact:hover, .single-welcome-slide .welcome-text .hero-mail-contact:focus {
+      .single-welcome-slide .welcome-text, .single-welcome-slide .welcome-text {
         color: var(--banner-color); }
 
 .nav-down-container {

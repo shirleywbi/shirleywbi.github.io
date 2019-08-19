@@ -46,6 +46,35 @@
     }
 
     // ***********************************
+    // :: 5.9 NavBar Active Code
+    // ***********************************
+    
+    alime_window.on('scroll', function () {
+        let scrollOffset = alime_window.scrollTop();
+        let welcomeSection = $('#welcome').offset().top;
+        let projectSection = $('#projects').offset().top;
+        let aboutSection = $('#about-me').offset().top;
+        let contactSection = $('#contact-us').offset().top;
+        
+        let scrollHeight = $(document).height();
+        let scrollPosition = $(window).height() + $(window).scrollTop();
+        let bottom = (scrollHeight - scrollPosition) === 0;
+
+        $('#nav li').removeClass('active');
+        if (bottom) {
+            $('#nav-contact').addClass('active');
+        } else if (scrollOffset >= 0 && scrollOffset < projectSection) {
+            $('#nav-welcome').addClass('active');
+        } else if (scrollOffset >= projectSection && scrollOffset < aboutSection) {
+            $('#nav-projects').addClass('active');
+        } else if (scrollOffset >= aboutSection && scrollOffset < contactSection) {
+            $('#nav-about').addClass('active');
+        } else {
+            $('#nav-contact').addClass('active');
+        } 
+    });    
+
+    // ***********************************
     // :: 6.0 Portfolio Button Active Code
     // ***********************************
     
