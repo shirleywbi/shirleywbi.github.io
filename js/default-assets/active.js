@@ -125,16 +125,39 @@
         $('.video-play-btn').magnificPopup({
             type: 'iframe'
         });
-        $('.portfolio-img').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true,
-                preload: [0, 2],
-                navigateByImgClick: true,
-                tPrev: 'Previous',
-                tNext: 'Next'
-            }
+        // $('.single-portfolio-content').magnificPopup({
+        //     delegate: 'a',
+        //     type: 'image',
+        //     gallery: {
+        //         enabled: true,
+        //         preload: [0, 2],
+        //         navigateByImgClick: true,
+        //         tPrev: 'Previous',
+        //         tNext: 'Next'
+        //     }
+        // });
+        $('.single-portfolio-content').click(function () {
+            let items = [];
+            let titles = [];
+            $(this).find('.hover-text').each(function() {
+                titles.push( {
+                    title: this.textContent
+                });
+            });
+           console.log(titles)
+           let test = [ { src: $("<div>" + titles[0].title + "</div>")}]
+            $.magnificPopup.open({
+                items: test,
+                gallery: {
+                    enabled: true
+                }
+            });          
         });
+    }
+
+    // Styling Code for Slider Contents
+    function stylingSlider() {
+        // TODO
     }
 
     // **************************
