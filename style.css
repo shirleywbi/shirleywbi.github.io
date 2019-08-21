@@ -852,12 +852,12 @@ input:required {
   padding-bottom: 15px;
 }
 
-.popup-title {
-  color: white;
+.popup-title, .popup-subtitle {
+  color: rgba(235,235,235,1);
 }
 
 .popup-text {
-  color: ghostwhite;
+  color: rgba(225,225,225,1);
 }
 
 /* :: 15.0 Gallery CSS */

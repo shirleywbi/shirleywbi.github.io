@@ -220,15 +220,15 @@
                 </div>
 
                 <!-- Slider Contents -->
-                <div class="all-popups" style="display: block"> <!-- Set to display: none when not in use -->
+                <div class="all-popups" style="display: none">
                     <!-- TODO Project: Budget App -->
                     <div class="popup container full-stack">
                         <div class="row">
                             <img class="col-12 col-sm-12 col-md-12 col-lg-7" src="img/project-img/budget-app-main.png" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
-                                <h4>Budget App</h4>
-                                <p><em>Tech Stack: Java, JUnit</em></p>
-                                <p>
+                                <h4 class="popup-title">Budget App</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: Java, JUnit</em></p>
+                                <p class="popup-text">
                                     Budget App 
                                     - produces dynamic reports on user income and expenses using the observer pattern.
                                     - implemented singleton pattern to restrict income data to one individual
@@ -250,9 +250,9 @@
                         <div class="row">
                             <img class="col-12 col-sm-12 col-md-12 col-lg-7" src="img/project-img/vango-main.png" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
-                                <h4>VanGo: Itinerary Planner</h4>
-                                <p><em>Tech Stack: ReactJS, Redux, Meteor, MongoDB</em></p>
-                                <p>
+                                <h4 class="popup-title">VanGo: Itinerary Planner</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: ReactJS, Redux, Meteor, MongoDB</em></p>
+                                <p class="popup-text">
                                     VanGo is an itinerary planner that lets you create, save and share itineraries with local events and attractions in Vancouver.
                                     What did I do:
                                     •	Set up React components, Redux states, and MongoDB collections for the itinerary, login, and registration page for an itinerary planning web app
@@ -274,9 +274,9 @@
                         <div class="row">
                             <img class="col-12 col-sm-12 col-md-12 col-lg-7" src="img/project-img/postings-main.png" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
-                                <h4>Message Board</h4>
-                                <p><em>Tech Stack: MERN</em></p>
-                                <p>
+                                <h4 class="popup-title">Message Board</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: MERN</em></p>
+                                <p class="popup-text">
                                     Message Board is a basic message board with add, delete, and filter functionality, storing persistent data on MongoDB.
                                     Why?
 
@@ -295,9 +295,9 @@
                         <div class="row">
                             <img class="col-12 col-sm-12 col-md-12 col-lg-7" src="img/project-img/cmdf-degree-nav-cropped.png" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
-                                <h4>Degree Navigator 2.0 <i style="color: var(--primary-color)" class="fas fa-crown"></i></h4>
-                                <p><em>Tech Stack: ReactJS, TypeScript</em></p>
-                                <p>
+                                <h4 class="popup-title">Degree Navigator 2.0 <i style="color: var(--primary-color)" class="fas fa-crown"></i></h4>
+                                <p class="popup-subtitle"><em>Tech Stack: ReactJS, TypeScript</em></p>
+                                <p class="popup-text">
                                     Due to the difficulty of reading and understanding the current UBC degree navigator, 
                                     our team decided to revamp the design with Degree Navigator 2.0.
                                     Degree Navigator 2.0 parses student academic credits to display a user's academic progress towards graduation 
@@ -314,9 +314,9 @@
                         <div class="row">
                             <img class="col-12 col-sm-12 col-md-12 col-lg-7" src="img/project-img/wine-warehouse-inventorymanager.png" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
-                                <h4>Wine Warehouse</h4>
-                                <p><em>Tech Stack: SQL, PHP</em></p>
-                                <p>
+                                <h4 class="popup-title">Wine Warehouse</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: SQL, PHP</em></p>
+                                <p class="popup-text">
                                     Designed logical and physical data models of a wine warehouse and implemented an Inventory Management System 
                                     to view, add, update, delete, and query a wine inventory with multiple user views using PHP and SQL
 
@@ -333,9 +333,9 @@
                         <div class="row">
                             <img class="col-12 col-sm-12 col-md-12 col-lg-7" src="img/project-img/insight-ubc.png" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
-                                <h4>Insight UBC</h4>
-                                <p><em>Tech Stack: TypeScript, JavaScript, HTML, Mocha/Chai, NodeJS</em></p>
-                                <p>
+                                <h4 class="popup-title">Insight UBC</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: TypeScript, JavaScript, HTML, Mocha/Chai, NodeJS</em></p>
+                                <p class="popup-text">
                                     Insight UBC is a NodeJS web app created to query UBC building and course metadata 
                                     by using asynchronous programming, parsing HTML files and JSON objects, using a RESTful design, and testing with Mocha/Chai.
 
@@ -352,8 +352,8 @@
                         <div class="row">
                             <img class="col-12 col-sm-12 col-md-12 col-lg-7" src="img/project-img/funcouver-prototype.PNG" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
-                                <h4>Funcouver: Event Explorer (Prototype)</h4>
-                                <p>
+                                <h4 class="popup-title">Funcouver: Event Explorer (Prototype)</h4>
+                                <p class="popup-text">
                                     Funcouver is a prototype for an event explorer created using Figma during the UBC BCS Hackathon.
                                     After learning about Figma, an interface design tool, at a cmd-f workshop, our team decided to create a prototype of an event explorer.
                                     The goal was to create a display such that a user would be able to visualize how popular an event was based on the size of its icon.
