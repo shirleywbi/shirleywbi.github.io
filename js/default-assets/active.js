@@ -136,40 +136,15 @@
         //         tNext: 'Next'
         //     }
         // });
-        $('.single-portfolio-content').click(function () {
-            let items = [];
-            let titles = [];
-            $(this).find('.hover-text').each(function() {
-                titles.push( {
-                    title: this.textContent
-                });
-            });
-           let test = [ {src: $('<div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30' +
-           'full-stack">'+
-           '<div class="">'+
-               '<img src="img/project-img/budget-app-main.png" alt="">'+
-               '<div class="center-text container">'+
-                   '<h4>Budget App</h4>'+
-                   '<p><em>Tech Stack: Java, JUnit</em></p>'+
-                   '<p>'+
-                       'Budget App' +
-                       '- produces dynamic reports on user income and expenses using the observer pattern.'+
-                       '- implemented singleton pattern to restrict income data to one individual'+
-                       '- created GUI using GridBagLayout in Java Swing and BarChart in Java FX'+
-
-                       'Challenges'+
-
-                       'What did I learn:'+
-                       '- TODO: Look through readme'+
-                   '</p>'+
-                   '<a class="btn badges-btn" href="https://github.com/shirleywbi/BudgetApp">GITHUB</a>'+
-               '</div>'+
-           '</div>'+
-       '</div>')}]
-            
-        //    let test = [ { src: $("<div>" + titles[0].title + "</div>")}]
+        $('.single-portfolio-content').click(function () {  // TODO: Fix this so it doesn't always start with budget app
+            let projects = [];
+            $('.all-popups').find('.popup').each(function() {
+                projects.push( {
+                    src: this
+                })
+            })
             $.magnificPopup.open({
-                items: test,
+                items: projects,
                 gallery: {
                     enabled: true
                 }

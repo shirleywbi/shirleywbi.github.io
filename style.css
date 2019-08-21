@@ -852,6 +852,14 @@ input:required {
   padding-bottom: 15px;
 }
 
+.popup-title {
+  color: white;
+}
+
+.popup-text {
+  color: ghostwhite;
+}
+
 /* :: 15.0 Gallery CSS */
 .alime-portfolio-area {
   position: relative;
