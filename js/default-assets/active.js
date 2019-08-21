@@ -125,17 +125,6 @@
         $('.video-play-btn').magnificPopup({
             type: 'iframe'
         });
-        // $('.single-portfolio-content').magnificPopup({
-        //     delegate: 'a',
-        //     type: 'image',
-        //     gallery: {
-        //         enabled: true,
-        //         preload: [0, 2],
-        //         navigateByImgClick: true,
-        //         tPrev: 'Previous',
-        //         tNext: 'Next'
-        //     }
-        // });
         $('.single-portfolio-content').click(function () {
             let projects = [];
             let index = $(this).attr('order');
@@ -150,7 +139,7 @@
                 gallery: {
                     enabled: true
                 }
-            });          
+            });
         });
     }
 
@@ -164,11 +153,6 @@
         }
         arr[0] = temp;
         return arr;
-    }
-
-    // Styling Code for Slider Contents
-    function stylingSlider() {
-        // TODO
     }
 
     // **************************

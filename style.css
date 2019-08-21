@@ -859,6 +859,7 @@ input:required {
 
 .popup-text {
   color: rgba(225,225,225,1);
+  text-align: justify;
 }
 
 /* :: 15.0 Gallery CSS */

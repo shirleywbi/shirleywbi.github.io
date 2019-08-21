@@ -123,9 +123,45 @@
                     </div>
                 </div>
 
+                <!-- TODO: Add a mask so that images are restricted to the same size for all -->
                 <div class="row alime-portfolio" id="alime-portfolio">
                     <!-- Single Project Item -->
-                    <!-- TODO: Add a mask so that images are restricted to the same size for all -->
+                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
+                        full-stack" 
+                        data-wow-delay="300ms">
+                        <div class="single-portfolio-content" order="0">
+                            <img src="img/project-img/vango-main-cropped.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">VanGo: Itinerary Planner</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Project Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
+                    full-stack"
+                    data-wow-delay="500ms">
+                        <div class="single-portfolio-content" order="1">
+                            <img src="img/project-img/postings-main-cropped.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">Message Board</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Single Project Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
+                        full-stack"
+                        data-wow-delay="300ms">
+                        <div class="single-portfolio-content" order="2">
+                            <img src="img/project-img/wine-warehouse-inventorymanager.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">Wine Warehouse</h4>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <!-- Single Project Item -->
                     <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
                         full-stack" 
                         data-wow-delay="100ms">
@@ -139,28 +175,16 @@
 
                     <!-- Single Project Item -->
                     <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
-                        full-stack" 
-                        data-wow-delay="300ms">
-                        <div class="single-portfolio-content" order="0">
-                            <img src="img/project-img/vango-main.png" alt="">
+                    back-end" 
+                    data-wow-delay="500ms">
+                        <div class="single-portfolio-content" order="4">
+                            <img src="img/project-img/insight-ubc-cropped.png" alt="">
                             <div class="hover-content center-text container">
-                                <h4 class="hover-text center-text">VanGo: Itinerary Planner</h4>
+                                <h4 class="hover-text center-text">Insight UBC</h4>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Single Project Item -->
-                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
-                    full-stack"
-                    data-wow-delay="500ms">
-                        <div class="single-portfolio-content" order="1">
-                            <img src="img/project-img/postings-main.png" alt="">
-                            <div class="hover-content center-text container">
-                                <h4 class="hover-text center-text">Message Board</h4>
-                            </div>
-                        </div>
-                    </div>
-                    
                     <!-- Single Project Item -->
                     <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
                         front-end hackathon" 
@@ -169,30 +193,6 @@
                             <img src="img/project-img/cmdf-degree-nav-cropped.png" alt="">
                             <div class="hover-content center-text container">
                                 <h4 class="hover-text center-text">Degree Navigator 2.0</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Project Item -->
-                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
-                        full-stack"
-                        data-wow-delay="300ms">
-                        <div class="single-portfolio-content" order="2">
-                            <img src="img/project-img/wine-warehouse-inventorymanager.png" alt="">
-                            <div class="hover-content center-text container">
-                                <h4 class="hover-text center-text">Wine Warehouse</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Project Item -->
-                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
-                    back-end" 
-                    data-wow-delay="500ms">
-                        <div class="single-portfolio-content" order="4">
-                            <img src="img/project-img/insight-ubc.png" alt="">
-                            <div class="hover-content center-text container">
-                                <h4 class="hover-text center-text">Insight UBC</h4>
                             </div>
                         </div>
                     </div>
@@ -266,7 +266,7 @@
                         </div>
                     </div>
 
-                    <!-- TODO Project: Wine Warehouse -->
+                    <!-- Project: Wine Warehouse -->
                     <div class="popup container full-stack">
                         <div class="row">
                             <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/wine-warehouse-inventorymanager.png" alt="">
@@ -274,11 +274,14 @@
                                 <h4 class="popup-title">Wine Warehouse</h4>
                                 <p class="popup-subtitle"><em>Tech Stack: SQL, PHP</em></p>
                                 <p class="popup-text">
-                                    Designed logical and physical data models of a wine warehouse and implemented an Inventory Management System 
+                                    Designed logical and physical data models of a wine warehouse and created an Inventory Management System 
                                     to view, add, update, delete, and query a wine inventory with multiple user views using PHP and SQL
-
-                                    What did I learn:
-                                    - TODO: Look through readme
+                                    <br/>
+                                    <br/>
+                                    <em class="popup-subtitle">Challenges:</em>
+                                    <br/>
+                                    Normalizing the data to 3NF separated some of the related information that I wanted to be together for the user interface.
+                                    Many of the tables had to be joined and multiple SQL queries had to be made to provide better usuability in terms of viewing, updating, adding, deleting, and querying the data.
                                 </p>
                                 <a class="btn badges-btn" href="https://github.com/shirleywbi/WineWarehouse">GITHUB</a>
                             </div>
@@ -446,11 +449,6 @@
     <!-- Work Experience Start -->
     <!-- TODO -->
     <!-- As timeline? -->
-    <!-- <ul class="popular-tags">
-        <li><a class="btn badges-btn" href="#">CAMERA</a></li>
-        <li><a class="btn badges-btn" href="#">PHOTOGRAHY</a></li>
-        <li><a class="btn badges-btn" href="#">TIPS</a></li>
-    </ul> -->
     <!-- <section class="work-exp-area section-padding-80-0 clearfix" id="work-exp">
         <div class="container">
             <div class="row">
