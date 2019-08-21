@@ -144,8 +144,30 @@
                     title: this.textContent
                 });
             });
-           console.log(titles)
-           let test = [ { src: $("<div>" + titles[0].title + "</div>")}]
+           let test = [ {src: $('<div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30' +
+           'full-stack">'+
+           '<div class="">'+
+               '<img src="img/project-img/budget-app-main.png" alt="">'+
+               '<div class="center-text container">'+
+                   '<h4>Budget App</h4>'+
+                   '<p><em>Tech Stack: Java, JUnit</em></p>'+
+                   '<p>'+
+                       'Budget App' +
+                       '- produces dynamic reports on user income and expenses using the observer pattern.'+
+                       '- implemented singleton pattern to restrict income data to one individual'+
+                       '- created GUI using GridBagLayout in Java Swing and BarChart in Java FX'+
+
+                       'Challenges'+
+
+                       'What did I learn:'+
+                       '- TODO: Look through readme'+
+                   '</p>'+
+                   '<a class="btn badges-btn" href="https://github.com/shirleywbi/BudgetApp">GITHUB</a>'+
+               '</div>'+
+           '</div>'+
+       '</div>')}]
+            
+        //    let test = [ { src: $("<div>" + titles[0].title + "</div>")}]
             $.magnificPopup.open({
                 items: test,
                 gallery: {

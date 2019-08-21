@@ -842,6 +842,16 @@ input:required {
   width: 1px;
 }
 
+/* :: 14.1 Gallery Pop-up Styling CSS */
+.popup-image-half {
+
+}
+
+.text-box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 /* :: 15.0 Gallery CSS */
 .alime-portfolio-area {
   position: relative;
