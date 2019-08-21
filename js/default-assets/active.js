@@ -136,13 +136,15 @@
         //         tNext: 'Next'
         //     }
         // });
-        $('.single-portfolio-content').click(function () {  // TODO: Fix this so it doesn't always start with budget app
+        $('.single-portfolio-content').click(function () {
             let projects = [];
+            let index = $(this).attr('order');
             $('.all-popups').find('.popup').each(function() {
                 projects.push( {
                     src: this
                 })
             })
+            projects = bringFoward(projects, index);
             $.magnificPopup.open({
                 items: projects,
                 gallery: {
@@ -150,6 +152,18 @@
                 }
             });          
         });
+    }
+
+    // EFFECTS: Moves the selected element at index to the front of the array
+    function bringFoward(arr, idx) {
+        if (idx == 0) return arr;
+
+        let temp = arr[idx];
+        for (let i=idx; i>0; i--) {
+            arr[i] = arr[i-1];
+        }
+        arr[0] = temp;
+        return arr;
     }
 
     // Styling Code for Slider Contents
