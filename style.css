@@ -843,8 +843,9 @@ input:required {
 }
 
 /* :: 14.1 Gallery Pop-up Styling CSS */
-.popup-image-half {
-
+.image-box {
+  padding-top: 20px;
+  align-self: baseline;
 }
 
 .text-box {
