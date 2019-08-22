@@ -1,13 +1,11 @@
 (function ($) {
     'use strict';
 
-    var alime_window = $(window);
-
     // ****************************
     // :: 1.0 Preloader Active Code
     // ****************************
 
-    alime_window.on('load', function () {
+    $(window).on('load', function () {
         $('#preloader').fadeOut('1000', function () {
             $(this).remove();
         });
@@ -19,81 +17,6 @@
 
     if ($.fn.classyNav) {
         $('#alimeNav').classyNav();
-    }
-
-    // *********************************
-    // :: 3.0 Welcome Slides Active Code
-    // *********************************
-
-    if ($.fn.owlCarousel) {
-        var welcomeSlider = $('.welcome-slides');
-        welcomeSlider.owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true,
-            smartSpeed: 1000,
-            autoplayTimeout: 10000,
-            nav: true,
-            navText: [('<i class="ti-arrow-left"></i>'), ('<i class="ti-arrow-right"></i>')]
-        })
-
-        welcomeSlider.on('translate.owl.carousel', function () {
-            var layer = $("[data-animation]");
-            layer.each(function () {
-                var anim_name = $(this).data('animation');
-                $(this).removeClass('animated ' + anim_name).css('opacity', '0');
-            });
-        });
-
-        $("[data-delay]").each(function () {
-            var anim_del = $(this).data('delay');
-            $(this).css('animation-delay', anim_del);
-        });
-
-        $("[data-duration]").each(function () {
-            var anim_dur = $(this).data('duration');
-            $(this).css('animation-duration', anim_dur);
-        });
-
-        welcomeSlider.on('translated.owl.carousel', function () {
-            var layer = welcomeSlider.find('.owl-item.active').find("[data-animation]");
-            layer.each(function () {
-                var anim_name = $(this).data('animation');
-                $(this).addClass('animated ' + anim_name).css('opacity', '1');
-            });
-        });
-    }
-
-    // ************************************
-    // :: 4.0 Instragram Slides Active Code
-    // ************************************
-
-    if ($.fn.owlCarousel) {
-        var instagramFeedSlider = $('.instragram-feed-area');
-        instagramFeedSlider.owlCarousel({
-            items: 6,
-            loop: true,
-            autoplay: true,
-            smartSpeed: 1000,
-            autoplayTimeout: 3000,
-            responsive: {
-                0: {
-                    items: 2
-                },
-                576: {
-                    items: 3
-                },
-                768: {
-                    items: 4
-                },
-                992: {
-                    items: 5
-                },
-                1200: {
-                    items: 6
-                }
-            }
-        })
     }
 
     // *********************************
@@ -120,6 +43,53 @@
         });
     }
 
+    // EFFECTS: loads more projects, resizes the section, and hides show more button
+    $('#view-more-projects').on('click', function () {
+        // Loads more projects
+        $('.more-projects').removeClass('hide');
+        
+        // Resizes the section
+        let currHeight = $('#alime-portfolio').height();
+        let maxHeight = Math.max.apply(null, $('.more-projects').map(function () {
+            return $(this).height();
+        }).get());
+        $('#alime-portfolio').height(currHeight + maxHeight);
+        
+        // Hides show more button
+        $('#view-more-projects').hide('slow');
+    });
+
+    // ***********************************
+    // :: 5.9 NavBar Active Code
+    // ***********************************
+    
+    // Dynamic changes for navigation bar
+    $(window).on('scroll', function () {
+        let scrollOffset = $(window).scrollTop();
+        let navHeight = $('.classy-nav-container').height();
+        let welcomeSection = $('#welcome').offset().top;
+        let projectSection = $('#projects').offset().top - navHeight;
+        let aboutSection = $('#about-me').offset().top - navHeight;
+        let contactSection = $('#contact-us').offset().top;
+        
+        let scrollHeight = $(document).height();
+        let scrollPosition = $(window).height() + $(window).scrollTop();
+        let bottom = (scrollHeight - scrollPosition) === 0;
+
+        $('#nav li').removeClass('active');
+        if (bottom) {
+            $('#nav-contact').addClass('active');
+        } else if (scrollOffset >= 0 && scrollOffset < projectSection) {
+            $('#nav-welcome').addClass('active');
+        } else if (scrollOffset >= projectSection && scrollOffset < aboutSection) {
+            $('#nav-projects').addClass('active');
+        } else if (scrollOffset >= aboutSection && scrollOffset < contactSection) {
+            $('#nav-about').addClass('active');
+        } else {
+            $('#nav-contact').addClass('active');
+        } 
+    });    
+
     // ***********************************
     // :: 6.0 Portfolio Button Active Code
     // ***********************************
@@ -140,8 +110,8 @@
     // :: 8.0 Stick Active Code
     // ************************
 
-    alime_window.on('scroll', function () {
-        if (alime_window.scrollTop() > 0) {
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 0) {
             $('.main-header-area').addClass('sticky');
         } else {
             $('.main-header-area').removeClass('sticky');
@@ -151,20 +121,53 @@
     // *********************************
     // :: 9.0 Magnific Popup Active Code
     // *********************************
+    let magnificPopup = $.magnificPopup.instance;
+
     if ($.fn.magnificPopup) {
         $('.video-play-btn').magnificPopup({
             type: 'iframe'
         });
-        $('.portfolio-img').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true,
-                preload: [0, 2],
-                navigateByImgClick: true,
-                tPrev: 'Previous',
-                tNext: 'Next'
+        $('.single-portfolio-content').click(function () {
+            let projects = [];
+            let index = $(this).attr('order');
+            $('.all-popups').find('.popup').each(function() {
+                projects.push( {
+                    src: this
+                })
+            })
+            projects = bringFoward(projects, index);
+            magnificPopup.open({
+                items: projects,
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    }
+
+    setTimeout(function() {
+        $('.mfp-container').swipe({
+            swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                // console.log('swiping' + direction)
+                magnificPopup.next();
+            },
+            swipeRight:function(event, direction, distance, duration, fingerCount) {
+                magnificPopup.prev();
+                // console.log('swiping' + direction)
             }
         });
+    }, 1500);
+
+    // EFFECTS: Moves the selected element at index to the front of the array
+    function bringFoward(arr, idx) {
+        if (idx == 0) return arr;
+
+        let temp = arr[idx];
+        for (let i=idx; i>0; i--) {
+            arr[i] = arr[i-1];
+        }
+        arr[0] = temp;
+        return arr;
     }
 
     // **************************
@@ -177,7 +180,7 @@
     // ***********************
     // :: 11.0 WOW Active Code
     // ***********************
-    if (alime_window.width() > 767) {
+    if ($(window).width() > 767) {
         new WOW().init();
     }
 
@@ -194,9 +197,9 @@
     // :: 13.0 Scrollup Active Code
     // ****************************
     if ($.fn.scrollUp) {
-        alime_window.scrollUp({
+        $(window).scrollUp({
             scrollSpeed: 1000,
-            scrollText: '<i class="arrow_carrot-up"</i>'
+            scrollText: '<i class="fa fa-angle-up"</i>'
         });
     }
 

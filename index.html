@@ -15,6 +15,8 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Walter+Turncoat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/36782ce556.js"></script>
 
 </head>
 
@@ -24,25 +26,6 @@
         <div class="loader"></div>
     </div>
     <!-- /Preloader -->
-
-    <!-- Top Search Form Area -->
-    <div class="top-search-area">
-        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!-- Close -->
-                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
-                        <!-- Form -->
-                        <form action="index.html" method="post">
-                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
-                            <button type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Header Area Start -->
     <header class="header-area">
@@ -70,14 +53,11 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li class="active"><a href="#welcome">Home</a></li>
-                                    <li><a href="#projects">Projects</a></li>
-                                    <li><a href="#about-me">About</a></li>
-                                    <li><a href="#contact-us">Contact</a></li>
+                                    <li id="nav-welcome" class="active"><a href="#welcome">Home</a></li>
+                                    <li id="nav-projects"><a href="#projects">Projects</a></li>
+                                    <li id="nav-about"><a href="#about-me">About</a></li>
+                                    <li id="nav-contact"><a href="#contact-us">Contact</a></li>
                                 </ul>
-
-                                <!-- Search Icon -->
-                                <div class="search-icon" data-toggle="modal" data-target="#searchModal"><i class="ti-search"></i></div>
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -90,15 +70,14 @@
 
     <!-- Welcome Area Start -->
     <section class="welcome-area" id="welcome">
-        <!-- <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/project-img/test.jpg);"> -->
-        <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpg);">
+        <div class="single-welcome-slide bg-img bg-overlay">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <!-- Welcome Text -->
-                    <div class="col-12 col-lg-8 col-xl-6">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 welcome-text-container">
                         <div class="welcome-text">
-                            <h2>Hello <br>I'm Shirley</h2>
-                            <p>I am a 4th year Computer Science student at the University of British Columbia 
+                            <h2 id="welcome-text-heading">Hello <br>I'm Shirley</h2>
+                            <p id="welcome-text-content">I am a 4th year Computer Science student at the University of British Columbia 
                                 with a love of 
                                 <b><i>learning</i></b>, 
                                 <b><i>problem solving</i></b>,
@@ -107,10 +86,13 @@
                             </p>
                         </div>
                     </div>
+                    <img class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 welcome-image" 
+                    src="img/bg-img/sbi-img.png" 
+                    alt="">
                     <!-- Down Arrow -->
-                    <div class="nav-down-container align-self-end">
-                        <a href="#projects"><i class="ti-angle-down" id="scrollDown" aria-hidden="true"></i></a>
-                    </div>
+                    <!-- <div class="nav-down-container align-self-end">
+                        <a href="#projects"><i class="fa fa-chevron-down" id="scrollDown" aria-hidden="true"></i></a>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -134,42 +116,27 @@
                         <!-- Projects Menu -->
                         <div class="alime-projects-menu">
                             <div class="portfolio-menu text-center">
-                                <!-- TODO: Filter by language and occasion -->
                                 <button class="btn active" data-filter="*">All</button>
                                 <button class="btn" data-filter=".full-stack">Full Stack</button>
                                 <button class="btn" data-filter=".back-end">Back End</button>
                                 <button class="btn" data-filter=".front-end">Front End</button>
-                                <button class="btn" data-filter=".hackathon">Hackathon</button>
+                                <button class="btn" data-filter=".hackathon">Hackathons</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row alime-portfolio">
-                    <!-- Single Project Item -->
-                    <!-- TODO: Add a mask so that images are restricted to the same size for all -->
-                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
-                        full-stack" 
-                        data-wow-delay="100ms">
-                        <div class="single-portfolio-content">
-                            <a href="img/project-img/budget-app-main.png" class="portfolio-img" title="test" alt="">
-                                <img src="img/project-img/budget-app-main.png" alt="">
-                                <!-- TODO: show title of project -->
-                                <div class="hover-content"></div>
-                            </a>
-                        </div>
-                    </div>
-
+                <!-- TODO: Add a mask so that images are restricted to the same size for all -->
+                <div class="row alime-portfolio" id="alime-portfolio">
                     <!-- Single Project Item -->
                     <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
                         full-stack" 
                         data-wow-delay="300ms">
-                        <div class="single-portfolio-content">
-                            <a href="img/project-img/vango-main.png" class="portfolio-img" title="test" alt="">
-                                <img src="img/project-img/vango-main.png" alt="">
-                                <!-- TODO: show title of project -->
-                                <div class="hover-content"></div>
-                            </a>
+                        <div class="single-portfolio-content" order="0">
+                            <img src="img/project-img/vango-main-cropped.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">VanGo: Itinerary Planner</h4>
+                            </div>
                         </div>
                     </div>
 
@@ -177,38 +144,35 @@
                     <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
                     full-stack"
                     data-wow-delay="500ms">
-                        <div class="single-portfolio-content">
-                            <a href="img/project-img/postings-main.png" class="portfolio-img" title="test" alt="">
-                                <img src="img/project-img/postings-main.png" alt="">
-                                <!-- TODO: show title of project -->
-                                <div class="hover-content"></div>
-                            </a>
+                        <div class="single-portfolio-content" order="1">
+                            <img src="img/project-img/postings-main-cropped.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">Message Board</h4>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Single Project Item -->
                     <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
-                        front-end hackathon" 
-                        data-wow-delay="100ms">
-                        <div class="single-portfolio-content">
-                            <a href="img/project-img/cmdf-degree-nav.png" class="portfolio-img" title="test" alt="">
-                                <img src="img/project-img/cmdf-degree-nav.png" alt="">
-                                <!-- TODO: show title of project -->
-                                <div class="hover-content"></div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Single Project Item -->
-                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
                         full-stack"
                         data-wow-delay="300ms">
-                        <div class="single-portfolio-content">
-                            <a href="img/project-img/wine-warehouse-inventorymanager.png" class="portfolio-img" title="test" alt="">
-                                <img src="img/project-img/wine-warehouse-inventorymanager.png" alt="">
-                                <!-- TODO: show title of project -->
-                                <div class="hover-content"></div>
-                            </a>
+                        <div class="single-portfolio-content" order="2">
+                            <img src="img/project-img/wine-warehouse-inventorymanager.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">Wine Warehouse</h4>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <!-- Single Project Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
+                        full-stack" 
+                        data-wow-delay="100ms">
+                        <div class="single-portfolio-content" order="3">
+                            <img src="img/project-img/budget-app-main.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text">Budget App</h4>
+                            </div>
                         </div>
                     </div>
 
@@ -216,36 +180,237 @@
                     <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
                     back-end" 
                     data-wow-delay="500ms">
-                        <div class="single-portfolio-content">
-                            <a href="img/project-img/insight-ubc.png" class="portfolio-img" title="test" alt="">
-                                <img src="img/project-img/insight-ubc.png" alt="">
-                                <!-- TODO: show title of project -->
-                                <div class="hover-content"></div>
-                            </a>
+                        <div class="single-portfolio-content" order="4">
+                            <img src="img/project-img/insight-ubc-cropped.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">Insight UBC</h4>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Single Project Item -->
                     <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
-                    hackathon" 
-                    data-wow-delay="100ms">
-                        <div class="single-portfolio-content">
-                            <a href="img/project-img/funcouver-prototype.PNG" class="portfolio-img" title="test" alt="">
-                                <img src="img/project-img/funcouver-prototype.PNG" alt="">
-                                <!-- TODO: show title of project -->
-                                <div class="hover-content"></div>
-                            </a>
+                        front-end hackathon" 
+                        data-wow-delay="100ms">
+                        <div class="single-portfolio-content" order="5">
+                            <img src="img/project-img/cmdf-degree-nav-cropped.png" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">Degree Navigator 2.0</h4>
+                            </div>
                         </div>
                     </div>
-
+                    
+                    <!-- Single Project Item -->
+                    <div class="col-12 col-sm-6 col-lg-4 single_gallery_item mb-30 wow fadeInUp
+                    hackathon more-projects hide"
+                    data-wow-delay="100ms">
+                        <div class="single-portfolio-content" order="6">
+                            <img src="img/project-img/funcouver-prototype.PNG" alt="">
+                            <div class="hover-content center-text container">
+                                <h4 class="hover-text center-text">Funcouver: Event Explorer (Prototype)</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Uncomment the day you have a lot more projects -->
                 <div class="row">
-                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="700ms">
-                        <a href="#" class="btn alime-btn btn-2 mt-15">View More</a>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms">
+                        <button class="btn alime-btn btn-2 mt-15" id="view-more-projects" aria-hidden="true">
+                            View More
+                        </button>
                     </div>
                 </div>
+
+                <!-- Slider Contents -->
+                <div class="all-popups" style="display: none">
+                    <!-- TODO Project: VanGo -->
+                    <div class="popup container full-stack">
+                        <div class="row">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/vango-main-thin.PNG" alt="">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
+                                <h4 class="popup-title">VanGo: Itinerary Planner</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: ReactJS, Redux, Meteor, MongoDB</em></p>
+                                <p class="popup-text">
+                                    VanGo is an itinerary planner that lets you create, save and share itineraries with local events and attractions in Vancouver.
+                                    My primary focus was designing the UI, creating the Itinerary/Login/Registration Pages in React and Redux, 
+                                    setting up the database for itinerary data, and integrating user experience feedback.
+                                    <br/>
+                                    <br/>
+                                    <em class="popup-subtitle">Challenges:</em>
+                                    <ul class="popup-text">
+                                        <li class="popup-list-item">
+                                            By having the React components track the changes in the database (Meteor) and state changes (Redux),
+                                            multiple re-renderings caused the map to throttle.
+                                            This was resolved by removing the Meteor tracker and using Meteor methods to decoupling the client from the database.
+                                        </li>
+                                        <li class="popup-list-item">
+                                            We used Meteor Accounts API for login and registration. 
+                                            Although the Blaze template was easy to use, it did not allow for much flexibility (e.g., login callbacks).
+                                            I had to create my own template and learnt to read documentation and the API code to decipher how to use the API.
+                                        </li>
+                                    </ul>
+                                </p>
+                                <a class="btn badges-btn" href="https://vango436.herokuapp.com">WEBAPP</a>
+                                <a class="btn badges-btn" href="https://github.com/shirleywbi/VanGo">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Message Board -->
+                    <div class="popup container full-stack">
+                        <div class="row">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/postings-main.png" alt="">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
+                                <h4 class="popup-title">Message Board</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: MongoDB, Express, ReactJS, Redux, NodeJS</em></p>
+                                <p class="popup-text">
+                                    Message Board is a basic message board with add, delete, and filter functionality, storing persistent data on MongoDB.
+                                    <br/>
+                                    <br/>
+                                    <em class="popup-subtitle">What I learnt:</em>
+                                    <ul class="popup-text">
+                                        <li class="popup-list-item">Front-end design using HTML/CSS/JavaScript/React</li>
+                                        <li class="popup-list-item">State management using Redux</li>
+                                        <li class="popup-list-item">SQL vs. noSQL and how to store data on a cloud database service</li>
+                                        <li class="popup-list-item">How to deploy an app using Heroku</li>
+                                    </ul>
+                                </p>
+                                <a class="btn badges-btn" href="https://sbi-postings.herokuapp.com">WEBAPP</a>
+                                <a class="btn badges-btn" href="https://github.com/shirleywbi/Message-Board">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Wine Warehouse -->
+                    <div class="popup container full-stack">
+                        <div class="row">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/wine-warehouse-inventorymanager.png" alt="">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
+                                <h4 class="popup-title">Wine Warehouse</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: SQL, PHP</em></p>
+                                <p class="popup-text">
+                                    Designed logical and physical data models of a wine warehouse and created an Inventory Management System 
+                                    to view, add, update, delete, and query a wine inventory with multiple user views using PHP and SQL
+                                    <br/>
+                                    <br/>
+                                    <em class="popup-subtitle">Challenges:</em>
+                                    <br/>
+                                    Normalizing the data to 3NF separated some of the related information that I wanted to be together for the user interface.
+                                    Many of the tables had to be joined and multiple SQL queries had to be made to provide better usuability in terms of viewing, updating, adding, deleting, and querying the data.
+                                </p>
+                                <a class="btn badges-btn" href="https://github.com/shirleywbi/WineWarehouse">GITHUB</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: Budget App -->
+                    <div class="popup container full-stack">
+                        <div class="row">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/budget-app-main.png" alt="">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
+                                <h4 class="popup-title">Budget App</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: Java, JUnit</em></p>
+                                <p class="popup-text">
+                                    Budget App produces dynamic reports on user income and expenses using the observer pattern.
+                                    The GUI was created using GridBagLayout in Java Swing and BarChart in JavaFX.
+                                    <br/>
+                                    <br/>
+                                    <em class="popup-subtitle">What I learnt:</em>
+                                    <ul class="popup-text">
+                                        <li class="popup-list-item">
+                                            Due to a lot of initial coupling and lack of cohesion, I was able to learn about the importance of writing maintainable code (as well as refactoring).
+                                        </li>
+                                        <li class="popup-list-item">
+                                            Learning to draw UML Diagrams helped me to visualize the overall structure of the app.
+                                        </li>
+                                        <li class="popup-list-item">
+                                            Although combining JavaFX and Java Swing is doable, it can be very error-prone.
+                                        </li>
+                                    </ul>
+                                </p>
+                                <!-- TODO: Insert video -->
+                                <a class="btn badges-btn" href="https://github.com/shirleywbi/BudgetApp">GITHUB</a>
+                            </div>        
+                        </div>
+                    </div>
+
+                    <!-- Project: Insight UBC -->
+                    <div class="popup container back-end">
+                        <div class="row">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/insight-ubc-thin.png" alt="">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
+                                <h4 class="popup-title">Insight UBC</h4>
+                                <p class="popup-subtitle"><em>Tech Stack: TypeScript, JavaScript, HTML, Mocha/Chai, NodeJS</em></p>
+                                <p class="popup-text">
+                                    Insight UBC is a NodeJS web app created to query UBC building and course metadata 
+                                    by using asynchronous programming, parsing HTML files and JSON objects, using a RESTful design, and testing with Mocha/Chai.
+                                    <br/>
+                                    <br/>
+                                    <em class="popup-subtitle">What I learnt:</em>
+                                    <br/>
+                                    The project was divided into two major parts: (1) handling the dataset and (2) performing queries.
+                                    Both my teammate and I were eager to learn both parts of the project. 
+                                    As such, we took it as a learning opportunity and switched roles half way through.
+                                    This allowed us to have a better understanding about how to write more readable code 
+                                    and an opportunity to get feedback on our own code.
+                                </p>
+                                <a class="btn badges-btn" href="https://github.com/ubccpsc/310/blob/2018sept/project/README.md">README</a>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <!-- Project: Degree Navigator 2.0 -->
+                    <div class="popup container front-end hackathon">
+                        <div class="row">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/cmdf-degree-nav-cropped.png" alt="">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
+                                <h4 class="popup-title">Degree Navigator 2.0 <i style="color: var(--primary-color)" class="fas fa-crown"></i></h4>
+                                <p class="popup-subtitle"><em>Tech Stack: ReactJS, TypeScript</em></p>
+                                <p class="popup-text">
+                                    Due to the difficulty of reading and understanding the current UBC degree navigator, 
+                                    our team decided to revamp the design with Degree Navigator 2.0.
+                                    Degree Navigator 2.0 parses student academic credits to display a user's academic progress towards graduation 
+                                    in a modern, legible, and clean interface using React.
+                                    The logic for counting the credits was written in TypeScript. 
+                                    <br/>
+                                    <br/>
+                                    Degree Navigator 2.0 received 2nd place at the cmd-f hackathon.
+                                </p>
+                                <a class="btn badges-btn" href="https://devpost.com/software/degree-navigator-2-0">DEVPOST</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- TODO: C++ Art of Compression -->
+
+                    <!-- Project: Funcouver -->
+                    <div class="popup container hackathon more-projects">
+                        <div class="row">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/funcouver-prototype.PNG" alt="">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
+                                <h4 class="popup-title">Funcouver: Event Explorer (Prototype)</h4>
+                                <p class="popup-text">
+                                    Funcouver is a prototype for an event explorer created using Figma during the UBC BCS Hackathon.
+                                    After learning about Figma, an interface design tool, at a cmd-f workshop, our team decided to create a prototype of an event explorer.
+                                    The goal was to create a display such that a user would be able to visualize how popular an event was based on the size of its icon.
+                                </p>
+                                <a class="btn badges-btn" href="https://www.figma.com/proto/EhNsd5QRNGQXKlxFaNBTzi7T/BCS-Hackathon-Funcouver-Prototype?node-id=10%3A89&scaling=min-zoom">PROTOTYPE</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Example -->
+                <!-- <div class="top-search-area">
+                    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
 
             </div>
         </div>
@@ -267,7 +432,7 @@
                 <!-- Single About Me Area -->
                 <div class="col-md-6 col-lg-4">
                     <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="chosse-us-icon">
+                        <div class="about-me-icon">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </div>
                         <h4>Who Am I</h4>
@@ -284,11 +449,11 @@
                 <!-- Single About Me Area -->
                 <div class="col-md-6 col-lg-4">
                     <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="chosse-us-icon">
+                        <div class="about-me-icon">
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </div>
                         <h4>Background</h4>
-                        <p>My background lies in psychology, research, and administration which has allowed me to build my 
+                        <p>My background is in psychology, research, and administration which has allowed me to build my 
                             <b><i>analytical</i></b>,
                             <b><i>communication</i></b>, and
                             <b><i>leadership</i></b>
@@ -299,8 +464,8 @@
                 <!-- Single About Me Area -->
                 <div class="col-md-6 col-lg-4">
                     <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="chosse-us-icon">
-                            <i class="ti icon_toolbox" aria-hidden="true"></i>
+                        <div class="about-me-icon">
+                            <i class="fa fa-toolbox" aria-hidden="true"></i>
                         </div>
                         <h4>Technical Skills</h4>
                         <p>Java, TypeScript, JavaScript, C++, <br/>
@@ -317,6 +482,24 @@
 
     <!-- Work Experience Start -->
     <!-- TODO -->
+    <!-- As timeline? -->
+    <!-- <section class="work-exp-area section-padding-80-0 clearfix" id="work-exp">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>Work Experience</h2> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-30"> -->
+                    <!-- Work Details Start -->
+                    <!-- Work Details End -->
+                <!-- </div>
+            </div>
+        </div>
+    </section> -->
     <!-- Work Experience End -->
 
     <!-- Contact Us Start -->
@@ -341,19 +524,19 @@
                             </li>
                             <li class="mb-15">
                                 <a href="https://github.com/shirleywbi">
-                                    <i class="fa fa-github footer-logo" aria-hidden="true"></i>
+                                    <i class="fab fa-github footer-logo" aria-hidden="true"></i>
                                     shirleywbi
                                 </a>
                             </li>
                             <li class="mb-15">
                                 <a href="https://www.linkedin.com/in/shirleywbi">
-                                    <i class="fa fa-linkedin-square footer-logo" aria-hidden="true"></i>
+                                    <i class="fab fa-linkedin footer-logo" aria-hidden="true"></i>
                                     shirleywbi
                                 </a>
                             </li>
                             <li class="mb-15">
                                 <a href="https://www.instagram.com/shirleybi.design/">
-                                    <i class="fa fa-instagram footer-logo" aria-hidden="true"></i>
+                                    <i class="fab fa-instagram footer-logo" aria-hidden="true"></i>
                                     shirleybi.design
                                 </a>
                             </li>
@@ -365,8 +548,6 @@
         </section>
         <!-- Contact Us End -->
 
-    
-
 
     <!-- Footer Area Start -->
     <footer class="footer-area bg-black">
@@ -376,9 +557,11 @@
                     <div class="footer-content d-flex align-items-center justify-content-between">
                         <!-- Copywrite Text -->
                         <div class="copywrite-text">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -396,6 +579,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/bootstrap.min.js"></script>
     <!-- All Plugins -->
     <script src="js/alime.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
 

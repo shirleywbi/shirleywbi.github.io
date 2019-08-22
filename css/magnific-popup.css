@@ -26,8 +26,8 @@
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0;
-  padding: 0 8px;
+  top: 5px;
+  padding: 0 10px;
   box-sizing: border-box; }
 
 .mfp-container:before {
@@ -123,9 +123,9 @@ button::-moz-focus-inner {
   border: 0; }
 
 .mfp-close {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   position: absolute;
   right: 0;
   top: 0;
