@@ -34,7 +34,6 @@ Last Update: Feb 22, 2019
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
 @import url(css/default-assets/classy-nav.css);
-@import url(css/owl.carousel.min.css);
 @import url(css/magnific-popup.css);
 /* :: 00.0 Variable Definitions */
 :root {
@@ -158,9 +157,10 @@ img.mfp-img {
   -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
 
-button.mfp-close,
-button.mfp-arrow {
+button.mfp-close {
   background: var(--primary-color-dark); }
+
+button.mfp-arrow {}
 
 .mfp-bottom-bar {
   display: none !important; }
