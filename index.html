@@ -224,20 +224,29 @@
                     <!-- TODO Project: VanGo -->
                     <div class="popup container full-stack">
                         <div class="row">
-                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/vango-main.png" alt="">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/vango-main-thin.PNG" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
                                 <h4 class="popup-title">VanGo: Itinerary Planner</h4>
                                 <p class="popup-subtitle"><em>Tech Stack: ReactJS, Redux, Meteor, MongoDB</em></p>
                                 <p class="popup-text">
                                     VanGo is an itinerary planner that lets you create, save and share itineraries with local events and attractions in Vancouver.
-                                    What did I do:
-                                    •	Set up React components, Redux states, and MongoDB collections for the itinerary, login, and registration page for an itinerary planning web app
-                                    •	Implemented user login and registration using Meteor Accounts, updating the state based on user-specific data, ensuring only user-specific data was published
-                                    •	Designed the UI using Semantic UI and updated the project based off user feedback
-
-                                    Challenges/
-                                    What did I learn:
-                                    - TODO: Look through readme
+                                    My primary focus was designing the UI, creating the Itinerary/Login/Registration Pages in React and Redux, 
+                                    setting up the database for itinerary data, and integrating user experience feedback.
+                                    <br/>
+                                    <br/>
+                                    <em class="popup-subtitle">Challenges:</em>
+                                    <ul class="popup-text">
+                                        <li class="popup-list-item">
+                                            By having the React components track the changes in the database (Meteor) and state changes (Redux),
+                                            multiple re-renderings caused the map to throttle.
+                                            This was resolved by removing the Meteor tracker and using Meteor methods to decoupling the client from the database.
+                                        </li>
+                                        <li class="popup-list-item">
+                                            We used Meteor Accounts API for login and registration. 
+                                            Although the Blaze template was easy to use, it did not allow for much flexibility (e.g., login callbacks).
+                                            I had to create my own template and learnt to read documentation and the API code to decipher how to use the API.
+                                        </li>
+                                    </ul>
                                 </p>
                                 <a class="btn badges-btn" href="https://vango436.herokuapp.com">WEBAPP</a>
                                 <a class="btn badges-btn" href="https://github.com/shirleywbi/VanGo">GITHUB</a>
@@ -258,7 +267,7 @@
                                     <br/>
                                     <em class="popup-subtitle">What I learnt:</em>
                                     <ul class="popup-text">
-                                        <li class="popup-list-item">Front-end design using HTML/CSS/JavaScript/ReactJS</li>
+                                        <li class="popup-list-item">Front-end design using HTML/CSS/JavaScript/React</li>
                                         <li class="popup-list-item">State management using Redux</li>
                                         <li class="popup-list-item">SQL vs. noSQL and how to store data on a cloud database service</li>
                                         <li class="popup-list-item">How to deploy an app using Heroku</li>
@@ -326,7 +335,7 @@
                     <!-- Project: Insight UBC -->
                     <div class="popup container back-end">
                         <div class="row">
-                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/insight-ubc.png" alt="">
+                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/insight-ubc-thin.png" alt="">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
                                 <h4 class="popup-title">Insight UBC</h4>
                                 <p class="popup-subtitle"><em>Tech Stack: TypeScript, JavaScript, HTML, Mocha/Chai, NodeJS</em></p>
