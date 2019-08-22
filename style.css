@@ -675,10 +675,6 @@ input:required {
     .welcome-text-container {
       padding-right: 0px !important; } }
 
-  @media only screen and (max-width: 445px) {
-    .welcome-text-content {
-      font-size: 16px; } }
-
 .single-welcome-slide {
   position: relative;
   z-index: 2;
@@ -713,7 +709,7 @@ input:required {
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 57px; } }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (min-width: 446px) and (max-width: 767px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 42px; } }
       @media only screen and (max-width: 445px) {
@@ -724,6 +720,9 @@ input:required {
       font-size: 20px;
       color: black;
       display: block; }
+    @media only screen and (max-width: 445px) {
+      .single-welcome-slide .welcome-text p {
+        font-size: 16px; } }
     .single-welcome-slide .welcome-text {
       color: #ffffff;
       font-style: italic; }
@@ -732,7 +731,9 @@ input:required {
 
 .nav-down-container {
   text-align: center;
-  margin-bottom: 11%;
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
 }    
 
 /* :: 9.0 Footer CSS */
