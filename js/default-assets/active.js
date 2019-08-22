@@ -148,12 +148,12 @@
     setTimeout(function() {
         $('.mfp-container').swipe({
             swipeLeft:function(event, direction, distance, duration, fingerCount) {
-                console.log('swiping' + direction)
+                // console.log('swiping' + direction)
                 magnificPopup.next();
             },
             swipeRight:function(event, direction, distance, duration, fingerCount) {
                 magnificPopup.prev();
-                console.log('swiping' + direction)
+                // console.log('swiping' + direction)
             }
         });
     }, 1500);
