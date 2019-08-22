@@ -682,11 +682,6 @@ input:required {
   @media only screen and (max-width: 575px) {
     .single-welcome-slide {
       height: 600px; } }
-            
-  #welcome-text-heading {
-    color: black;
-    background-color: black;
-  }
 
   .single-welcome-slide .welcome-text {
     position: relative;
@@ -696,9 +691,9 @@ input:required {
       font-weight: 700;
       font-size: 82px;
       display: block;
+      color: black;
       margin-bottom: 0;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-background-clip: text; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 57px; } }
