@@ -556,10 +556,6 @@ input:required {
     transition-duration: 500ms;
     height: 70px;
     padding: 0; }
-    @media only screen and (max-width: 475px) {
-      .classy-nav-container {
-        background-color: transparent; }
-       }
     .classy-nav-container .classy-navbar .classynav ul li a {
       font-size: 16px;
       text-transform: capitalize;
@@ -636,11 +632,6 @@ input:required {
 
 .classy-navbar-toggler .navbarToggler span {
   background-color: #ffffff; }
-  @media only screen and (max-width: 475px) {
-    .classy-navbar-toggler .navbarToggler span {
-      background-color: black; }
-     }
-  
 
 /* :: 8.0 Hero CSS */
 .welcome-area {
