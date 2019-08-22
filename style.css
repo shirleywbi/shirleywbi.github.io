@@ -567,10 +567,10 @@ input:required {
     transition-duration: 500ms;
     height: 70px;
     padding: 0; }
-    @media only screen and (max-width: 767px) {
-      .classy-nav-container .classy-navbar {
-        max-width: 90px;
-        margin-right: 15px; } }
+    @media only screen and (max-width: 475px) {
+      .classy-nav-container {
+        background-color: transparent; }
+       }
     .classy-nav-container .classy-navbar .classynav ul li a {
       font-size: 16px;
       text-transform: capitalize;
@@ -647,6 +647,11 @@ input:required {
 
 .classy-navbar-toggler .navbarToggler span {
   background-color: #ffffff; }
+  @media only screen and (max-width: 475px) {
+    .classy-navbar-toggler .navbarToggler span {
+      background-color: var(--font-color-dark); }
+     }
+  
 
 /* :: 8.0 Hero CSS */
 .welcome-area {
@@ -669,6 +674,10 @@ input:required {
   @media only screen and (max-width: 575px) {
     .welcome-text-container {
       padding-right: 0px !important; } }
+
+  @media only screen and (max-width: 445px) {
+    .welcome-text-content {
+      font-size: 16px; } }
 
 .single-welcome-slide {
   position: relative;
@@ -707,6 +716,9 @@ input:required {
       @media only screen and (max-width: 767px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 42px; } }
+      @media only screen and (max-width: 445px) {
+        .single-welcome-slide .welcome-text h2 {
+          font-size: 35px; } }
     .single-welcome-slide .welcome-text p {
       font-family: "Walter Turncoat";
       font-size: 20px;
