@@ -216,8 +216,8 @@
     // ****************************
     if ($.fn.scrollUp) {
         $(window).scrollUp({
-            scrollSpeed: 1000,
-            scrollText: '<i class="fa fa-angle-up"</i>'
+            scrollSpeed: 0,
+            scrollText: '<a href="#welcome"><i class="fa fa-angle-up"</i></a>'
         });
     }
 
