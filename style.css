@@ -868,6 +868,7 @@ input:required {
 .popup-list-item {
   list-style-type: square;
   margin-left: 20px;
+  text-align: left;
 }
 
 /* :: 15.0 Gallery CSS */

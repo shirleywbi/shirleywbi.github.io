@@ -148,13 +148,15 @@
     setTimeout(function() {
         $('.mfp-container').swipe({
             swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                console.log('swiping' + direction)
                 magnificPopup.next();
             },
             swipeRight:function(event, direction, distance, duration, fingerCount) {
                 magnificPopup.prev();
+                console.log('swiping' + direction)
             }
         });
-    }, 3500);
+    }, 1500);
 
     // EFFECTS: Moves the selected element at index to the front of the array
     function bringFoward(arr, idx) {
