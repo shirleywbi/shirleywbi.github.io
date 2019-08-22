@@ -154,7 +154,13 @@
                     enabled: true
                 }
             });
+            $('#scrollUp').hide();
         });
+    }
+
+    magnificPopup.close = function () {
+        $.magnificPopup.proto.close.call(this);
+        $('#scrollUp').show();
     }
 
     setTimeout(function() {
