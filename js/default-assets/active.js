@@ -45,19 +45,46 @@
 
     // EFFECTS: loads more projects, resizes the section, and hides show more button
     $('#view-more-projects').on('click', function () {
-        // Loads more projects
-        $('.more-projects').removeClass('hide');
-        
-        // Resizes the section
-        let currHeight = $('#alime-portfolio').height();
-        let maxHeight = Math.max.apply(null, $('.more-projects').map(function () {
-            return $(this).height();
-        }).get());
-        $('#alime-portfolio').height(currHeight + maxHeight);
-        
-        // Hides show more button
-        $('#view-more-projects').hide('slow');
+        let status = $('#view-more-projects').text();
+        if (status.includes('View More')) {
+            // Loads more projects
+            $('.more-projects').removeClass('hide');
+            
+            // Resizes the section 
+            //TODO: ISSUE: This resizing isn't the correct size b/c it takes the bottom and adds on size
+            //However, the project may not get added to the very bottom
+            let currHeight = $('#alime-portfolio').height();
+            let maxHeight = Math.max.apply(null, $('.more-projects').map(function () {
+                return $(this).height();
+            }).get());
+            $('#alime-portfolio').height(currHeight + maxHeight);
+
+            // Hides view more button
+            $('#view-more-projects').hide('slow');
+            // setViewLess();
+        } else {
+            // // Resizes the section
+            // let currHeight = $('#alime-portfolio').height();
+            // let maxHeight = Math.max.apply(null, $('.more-projects').map(function () {
+            //     return $(this).height();
+            // }).get());
+            // $('#alime-portfolio').height(currHeight - maxHeight);
+
+            // Remove loaded projects
+            $('.more-projects').addClass('hide');
+
+            setViewMore();
+        }
     });
+
+    // EFFECTS: changes view more button to view less
+    function setViewLess() {
+        $('#view-more-projects').text('View Less');
+    }
+    // EFFECTS: changes view less button to view more
+    function setViewMore() {
+        $('#view-more-projects').text('View More');
+    }
 
     // ***********************************
     // :: 5.9 NavBar Active Code
