@@ -194,9 +194,15 @@ input:required {
 
 .mfp-arrow-left::before {
   border-right-color: var(--primary-color-dark); }
+  @media (max-width: 611px) {
+    .mfp-arrow-left::before {
+      display: none } }
 
 .mfp-arrow-right::after {
   border-left-color: transparent; }
+  @media (max-width: 611px) {
+    .mfp-arrow-right::before {
+      display: none } }
 
 .mfp-arrow-right::before {
   border-left-color: var(--primary-color-dark); }
@@ -394,9 +400,6 @@ input:required {
         font-size: 24px; } }
   .section-heading p {
     margin-bottom: 0; }
-  .section-heading.white p,
-  .section-heading.white h2 {
-    color: #ffffff; }
 
 /* :: 5.0 Backtotop CSS */
 #scrollUp {

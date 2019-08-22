@@ -121,6 +121,8 @@
     // *********************************
     // :: 9.0 Magnific Popup Active Code
     // *********************************
+    let magnificPopup = $.magnificPopup.instance;
+
     if ($.fn.magnificPopup) {
         $('.video-play-btn').magnificPopup({
             type: 'iframe'
@@ -134,7 +136,7 @@
                 })
             })
             projects = bringFoward(projects, index);
-            $.magnificPopup.open({
+            magnificPopup.open({
                 items: projects,
                 gallery: {
                     enabled: true
@@ -142,6 +144,17 @@
             });
         });
     }
+
+    setTimeout(function() {
+        $('.mfp-container').swipe({
+            swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                magnificPopup.next();
+            },
+            swipeRight:function(event, direction, distance, duration, fingerCount) {
+                magnificPopup.prev();
+            }
+        });
+    }, 3500);
 
     // EFFECTS: Moves the selected element at index to the front of the array
     function bringFoward(arr, idx) {
