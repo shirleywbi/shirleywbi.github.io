@@ -35,17 +35,6 @@ Last Update: Feb 22, 2019
 @import url(css/animate.css);
 @import url(css/default-assets/classy-nav.css);
 @import url(css/magnific-popup.css);
-/* :: 00.0 Variable Definitions */
-:root {
-  --primary-color: #ffcb00;
-  --primary-color-dark: #ffae00;
-  --banner-color: #ffcb00;
-  --icon-color: #996633;
-  --icon-color-black: black;
-  --gray: #6b6b6b;
-  --font-color: #636363;
-  --font-color-dark: black;
-}
 
 /* :: 01.0 Reboot CSS */
 * {
@@ -91,7 +80,7 @@ li {
 
 p {
   line-height: 1.9;
-  color: var(--font-color);
+  color: #636363;
   font-size: 16px;
   font-weight: 400; }
 
@@ -149,7 +138,7 @@ ul {
   width: 100%;
   top: 20px;
   width: 30px;
-  background: var(--primary-color-dark);
+  background: #ffae00;
   height: 30px;
   line-height: 30px; }
 
@@ -158,7 +147,7 @@ img.mfp-img {
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
 
 button.mfp-close {
-  background: var(--primary-color-dark);
+  background: #ffae00;
   border-radius: 2px; }
 
 .mfp-bottom-bar {
@@ -193,7 +182,7 @@ input:required {
   border-right-color: transparent; }
 
 .mfp-arrow-left::before {
-  border-right-color: var(--primary-color-dark); }
+  border-right-color: #ffae00; }
   @media (max-width: 611px) {
     .mfp-arrow-left::before {
       display: none } }
@@ -205,7 +194,7 @@ input:required {
       display: none } }
 
 .mfp-arrow-right::before {
-  border-left-color: var(--primary-color-dark); }
+  border-left-color: #ffae00; }
 
 /* :: 02.0 Spacing CSS */
 .mt-15 {
@@ -347,7 +336,7 @@ input:required {
 
 .loader {
   margin-top: -20px;
-  color: var(--primary-color);
+  color: #ffcb00;
   font-size: 6px;
   position: relative;
   -webkit-transform: translateZ(0);
@@ -410,8 +399,8 @@ input:required {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  background-color: var(--primary-color-dark);
-  color: var(--font-color-dark);
+  background-color: #ffae00;
+  color: black;
   text-align: center;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -430,7 +419,7 @@ input:required {
 
 /* :: 5.1 DownToNext CSS */
 #scrollDown {
-  color: var(--icon-color-black);
+  color: black;
   font-size: 7rem;
   bottom: 6%;
   text-align: center;
@@ -441,7 +430,7 @@ input:required {
     }
   }
   #scrollDown:focus, #scrollDown:hover {
-    color: var(--icon-color-black); }
+    color: black; }
 
 /* :: 6.0 Buttons CSS */
 .btn:focus {
@@ -461,25 +450,25 @@ input:required {
   text-transform: capitalize;
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid var(--primary-color-dark);
+  border: 2px solid #ffae00;
   border-radius: 60px;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms; }
   .alime-btn.btn-2 {
-    color: var(--font-color-dark); }
+    color: black; }
   .alime-btn:hover {
     font-weight: 500;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-    background-color: var(--primary-color);
-    color: var(--font-color-dark); }
+    background-color: #ffcb00;
+    color: black; }
 
 .badges-btn {
   background-color: #ebebeb;
   padding: 5px 15px;
   display: inline-block;
-  color: var(--font-color);
+  color: #636363;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -489,7 +478,7 @@ input:required {
   transition-duration: 500ms;
   letter-spacing: 1px; }
   .badges-btn:hover, .badges-btn:focus {
-    background-color: var(--primary-color-dark);
+    background-color: #ffae00;
     color: #ffffff;
     font-weight: 500; }
 
@@ -550,7 +539,7 @@ input:required {
     z-index: 10;
     border-radius: 0 6px 6px 0;
     border: none;
-    background-color: var(--primary-color);
+    background-color: #ffcb00;
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
@@ -578,7 +567,7 @@ input:required {
       font-weight: 500;
       padding: 0 20px; }
       .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-        color: var(--primary-color); }
+        color: #ffcb00; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px; } }
@@ -587,13 +576,13 @@ input:required {
           font-size: 14px;
           color: #252525; }
           .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-            color: var(--primary-color); } }
+            color: #ffcb00; } }
       @media only screen and (max-width: 767px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px;
           color: #252525; }
           .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-            color: var(--primary-color); } }
+            color: #ffcb00; } }
     .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
       font-size: 14px;
       text-transform: capitalize;
@@ -602,7 +591,7 @@ input:required {
       padding: 0 30px;
       color: #252525; }
       .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus, .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
-        color: var(--primary-color); }
+        color: #ffcb00; }
 
 .classynav ul li.active a {
   position: relative;
@@ -610,7 +599,7 @@ input:required {
   .classynav ul li.active a::before {
     width: calc(100% - 40px);
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: #ffcb00;
     position: absolute;
     bottom: 7px;
     left: 0;
@@ -628,7 +617,7 @@ input:required {
 .classynav ul li.has-down > a::after,
 .classynav ul li.has-down.active > a::after,
 .classynav ul li.megamenu-item > a::after {
-  color: var(--primary-color); }
+  color: #ffcb00; }
 
 .classy-navbar-toggler .navbarToggler span {
   background-color: #252525; }
@@ -649,7 +638,7 @@ input:required {
   background-color: #ffffff; }
   @media only screen and (max-width: 475px) {
     .classy-navbar-toggler .navbarToggler span {
-      background-color: var(--font-color-dark); }
+      background-color: black; }
      }
   
 
@@ -680,7 +669,7 @@ input:required {
   z-index: 2;
   width: 100%;
   height: 800px;
-  background-color: var(--banner-color); }
+  background-color: #ffcb00; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-welcome-slide {
       height: 750px; } }
@@ -723,11 +712,8 @@ input:required {
     @media only screen and (max-width: 445px) {
       .single-welcome-slide .welcome-text p {
         font-size: 16px; } }
-    .single-welcome-slide .welcome-text {
-      color: #ffffff;
-      font-style: italic; }
       .single-welcome-slide .welcome-text, .single-welcome-slide .welcome-text {
-        color: var(--banner-color); }
+        color: #ffcb00; }
 
 .nav-down-container {
   text-align: center;
@@ -749,7 +735,7 @@ input:required {
         .footer-content .copywrite-text p {
           font-size: 12px; } }
       .footer-content .copywrite-text p a {
-        color: var(--primary-color);
+        color: #ffcb00;
         font-weight: 400; }
         @media only screen and (max-width: 767px) {
           .footer-content .copywrite-text p a {
@@ -768,7 +754,7 @@ input:required {
         margin-right: 5px;
         font-size: 12px; } }
     .footer-content .social-info a:hover, .footer-content .social-info a:focus {
-      color: var(--primary-color); }
+      color: #ffcb00; }
 
 .footer-logo {
   font-size: 24px;
@@ -788,7 +774,7 @@ input:required {
 .about-us-content .line {
   height: 3px;
   width: 70px;
-  background-color: var(--primary-color);
+  background-color: #ffcb00;
   margin-bottom: 30px; }
 
 @-webkit-keyframes video-icon {
@@ -834,7 +820,7 @@ input:required {
     transition-duration: 800ms;
     height: 76px;
     width: 76px;
-    background-color: var(--primary-color-dark);
+    background-color: #ffae00;
     display: inline-block;
     text-align: center;
     line-height: 76px;
@@ -859,14 +845,14 @@ input:required {
     font-size: 14px;
     margin-bottom: 0; }
   .why-choose-us-content:hover, .why-choose-us-content:focus {
-    background-color: var(--primary-color-dark); }
+    background-color: #ffae00; }
     .why-choose-us-content:hover .about-me-icon, .why-choose-us-content:focus .about-me-icon {
-      background-color: var(--icon-color-black);
+      background-color: black;
       box-shadow: 0 5px 15px 2px rgba(255, 255, 255, 0.15); }
     .why-choose-us-content:hover h4,
     .why-choose-us-content:hover p, .why-choose-us-content:focus h4,
     .why-choose-us-content:focus p {
-      color: var(--font-color-dark); }
+      color: black; }
 
 /* :: 14.0 Gallery Hiding CSS */
 .hide {
@@ -950,7 +936,7 @@ input:required {
       position: absolute;
       width: 0%;
       height: 3px;
-      background-color: var(--primary-color);
+      background-color: #ffcb00;
       content: '';
       bottom: -5px;
       left: 0;
@@ -996,7 +982,7 @@ input:required {
       width: 52px;
       height: 52px;
       border-radius: 50%;
-      background-color: var(--primary-color);
+      background-color: #ffcb00;
       text-align: center;
       line-height: 52px;
       font-size: 30px;
@@ -1037,7 +1023,7 @@ input:required {
   border: 1px solid #ebebeb; }
   .alime-contact-form .form-control:focus {
     box-shadow: none;
-    border-color: var(--primary-color); }
+    border-color: #ffcb00; }
 .alime-contact-form textarea.form-control {
   height: 120px;
   padding: 20px; }
