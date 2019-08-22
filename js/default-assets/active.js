@@ -141,7 +141,7 @@
         });
         $('.single-portfolio-content').click(function () {
             let projects = [];
-            let index = $(this).attr('order');
+            let index = $(this).attr('project-order');
             $('.all-popups').find('.popup').each(function() {
                 projects.push( {
                     src: this
