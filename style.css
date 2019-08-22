@@ -158,9 +158,8 @@ img.mfp-img {
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
 
 button.mfp-close {
-  background: var(--primary-color-dark); }
-
-button.mfp-arrow {}
+  background: var(--primary-color-dark);
+  border-radius: 2px; }
 
 .mfp-bottom-bar {
   display: none !important; }
@@ -194,13 +193,13 @@ input:required {
   border-right-color: transparent; }
 
 .mfp-arrow-left::before {
-  border-right-color: #ffffff; }
+  border-right-color: var(--primary-color-dark); }
 
 .mfp-arrow-right::after {
   border-left-color: transparent; }
 
 .mfp-arrow-right::before {
-  border-left-color: #ffffff; }
+  border-left-color: var(--primary-color-dark); }
 
 /* :: 02.0 Spacing CSS */
 .mt-15 {
