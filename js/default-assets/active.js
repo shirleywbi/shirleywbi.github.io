@@ -141,7 +141,7 @@
         });
         $('.single-portfolio-content').click(function () {
             let projects = [];
-            let index = $(this).attr('order');
+            let index = $(this).attr('project-order');
             $('.all-popups').find('.popup').each(function() {
                 projects.push( {
                     src: this
@@ -154,7 +154,13 @@
                     enabled: true
                 }
             });
+            $('#scrollUp').hide();
         });
+    }
+
+    magnificPopup.close = function () {
+        $.magnificPopup.proto.close.call(this);
+        $('#scrollUp').show();
     }
 
     setTimeout(function() {
@@ -210,8 +216,8 @@
     // ****************************
     if ($.fn.scrollUp) {
         $(window).scrollUp({
-            scrollSpeed: 1000,
-            scrollText: '<i class="fa fa-angle-up"</i>'
+            scrollSpeed: 0,
+            scrollText: '<a href="#welcome"><i class="fa fa-angle-up"</i></a>'
         });
     }
 
