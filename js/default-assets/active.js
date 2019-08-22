@@ -22,7 +22,7 @@
     // *********************************
     // :: 5.0 Masonary Gallery Active Code
     // *********************************
-
+    let $grid;
     if ($.fn.imagesLoaded) {
         $('.alime-portfolio').imagesLoaded(function () {
             // filter items on button click
@@ -33,7 +33,7 @@
                 });
             });
             // init Isotope
-            var $grid = $('.alime-portfolio').isotope({
+            $grid = $('.alime-portfolio').isotope({
                 itemSelector: '.single_gallery_item',
                 percentPosition: true,
                 masonry: {
@@ -43,21 +43,33 @@
         });
     }
 
-    // EFFECTS: loads more projects, resizes the section, and hides show more button
+    $('.more-projects').hide();
+
+    // EFFECTS: Toggles view more or view less
     $('#view-more-projects').on('click', function () {
-        // Loads more projects
-        $('.more-projects').removeClass('hide');
-        
-        // Resizes the section
-        let currHeight = $('#alime-portfolio').height();
-        let maxHeight = Math.max.apply(null, $('.more-projects').map(function () {
-            return $(this).height();
-        }).get());
-        $('#alime-portfolio').height(currHeight + maxHeight);
-        
-        // Hides show more button
-        $('#view-more-projects').hide('slow');
+        let status = $('#view-more-projects').text();
+        if (status.includes('View More')) {
+            // Show more projects and scroll to auto-load
+            $('.more-projects').show();
+            $grid.masonry().append('').masonry('appended', '');
+            window.scrollBy(0,1);
+            setViewLess();
+        } else {
+            // Hide more projects
+            $('.more-projects').hide();
+            $grid.masonry().append('').masonry('appended', '');
+            setViewMore();
+        }
     });
+
+    // EFFECTS: changes view more button to view less
+    function setViewLess() {
+        $('#view-more-projects').text('View Less');
+    }
+    // EFFECTS: changes view less button to view more
+    function setViewMore() {
+        $('#view-more-projects').text('View More');
+    }
 
     // ***********************************
     // :: 5.9 NavBar Active Code
