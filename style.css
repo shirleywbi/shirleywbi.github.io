@@ -489,7 +489,7 @@ input:required {
   transition-duration: 500ms;
   letter-spacing: 1px; }
   .badges-btn:hover, .badges-btn:focus {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
     color: #ffffff;
     font-weight: 500; }
 
@@ -1003,9 +1003,9 @@ input:required {
       .single-portfolio-content .hover-content a:hover, .single-portfolio-content .hover-content a:focus {
         background-color: #000000; }
   .single-portfolio-content:hover img, .single-portfolio-content:focus img {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2); }
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
   .single-portfolio-content:hover .hover-content, .single-portfolio-content:focus .hover-content {
     opacity: 1;
     visibility: visible; }
