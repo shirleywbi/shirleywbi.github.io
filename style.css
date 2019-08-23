@@ -393,6 +393,7 @@ input:required {
   .header-logo {
     color: black;
     font-size: 24px;
+    vertical-align: middle;
     margin-right: 8px; }
     .fa-envelope.header-logo {
       font-size:20.56px;
@@ -490,6 +491,22 @@ input:required {
     color: #ffffff;
     font-weight: 500; }
 
+.header-btn {
+  background-color: transparent;
+  display: inline-block;
+  color: black;
+  border: 2px solid black;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  letter-spacing: 1px; }
+    
 /* :: 7.0 Header CSS */
 .header-area {
   position: fixed;
@@ -650,7 +667,7 @@ input:required {
   align-self: center; }
   @media only screen and (min-width: 1199px) {
     .welcome-image {
-      max-width: 45%;
+      max-width: 40%;
       margin-left: 40px; } }
   @media only screen and (max-width: 575px) {
     .welcome-image {
@@ -702,6 +719,9 @@ input:required {
       @media only screen and (max-width: 445px) {
         .single-welcome-slide .welcome-text h2 {
           font-size: 35px; } }
+      @media only screen and (max-width: 375px) {
+        .single-welcome-slide .welcome-text h2 {
+          font-size: 29px; } }
     .single-welcome-slide .welcome-text p {
       font-family: "Walter Turncoat";
       font-size: 20px;
@@ -710,6 +730,9 @@ input:required {
     @media only screen and (max-width: 445px) {
       .single-welcome-slide .welcome-text p {
         font-size: 16px; } }
+      @media only screen and (max-width: 370px) {
+        .single-welcome-slide .welcome-text p {
+          font-size: 14px; } }
       .single-welcome-slide .welcome-text, .single-welcome-slide .welcome-text {
         color: #ffcb00; }
 
