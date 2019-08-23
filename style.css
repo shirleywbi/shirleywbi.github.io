@@ -421,9 +421,9 @@ input:required {
     #scrollUp {
       right: 20px;
       bottom: 20px; } }
-  #scrollUp:hover {
+  /* #scrollUp:hover {
     background-color: #000000;
-    color: #ffffff; }
+    color: #ffffff; } */
 
 /* :: 5.1 DownToNext CSS */
 #scrollDown {
