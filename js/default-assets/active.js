@@ -20,12 +20,12 @@
     }
 
     // *********************************
-    // :: 5.0 Masonary Gallery Active Code
+    // :: 5.0 Masonry Gallery Active Code
     // *********************************
     let $grid;
     if ($.fn.imagesLoaded) {
         $('.alime-portfolio').imagesLoaded(function () {
-            // filter items on button click
+            // Filter items on button click
             $('.portfolio-menu').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
                 // Set View More to View Less
