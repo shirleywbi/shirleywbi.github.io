@@ -28,6 +28,13 @@
             // filter items on button click
             $('.portfolio-menu').on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
+                // Set View More to View Less
+                if (filterValue == "*") {
+                    $('#view-more-projects').show();
+                    setViewLess();
+                } else {
+                    $('#view-more-projects').hide();
+                }
                 $grid.isotope({
                     filter: filterValue
                 });

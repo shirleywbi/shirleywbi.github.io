@@ -390,6 +390,14 @@ input:required {
   .section-heading p {
     margin-bottom: 0; }
 
+  .header-logo {
+    color: black;
+    font-size: 24px;
+    margin-right: 8px; }
+    .fa-envelope.header-logo {
+      font-size:20.56px;
+    }
+
 /* :: 5.0 Backtotop CSS */
 #scrollUp {
   position: fixed;
