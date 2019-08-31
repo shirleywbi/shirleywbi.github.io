@@ -35,6 +35,10 @@
                 } else {
                     $('#view-more-projects').hide();
                 }
+                // Add more projects to grid
+                $('.more-projects'+filterValue).show();
+                $grid.masonry().append('').masonry('appended', ''); 
+                // Apply filter
                 $grid.isotope({
                     filter: filterValue
                 });
