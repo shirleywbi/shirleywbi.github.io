@@ -23,7 +23,7 @@ const BannerSection = () => {
                         </div>
                         <div>
                             <IconWithLabel
-                                className={"header-logo wow fadeInUp"}
+                                className={"deco-icon pad-right wow fadeInUp"}
                                 icon={["fa", "envelope"]}
                                 href={"mailto:s.bi@alumni.ubc.ca"}
                                 aria-hidden="true"
@@ -31,21 +31,21 @@ const BannerSection = () => {
                                 data-wow-delay="0.4s"
                             />
                             <IconWithLabel 
-                                className={"header-logo wow fadeInUp"}
+                                className={"deco-icon pad-right wow fadeInUp"}
                                 icon={["fab", "github"]}
                                 href={"https://github.com/shirleywbi"}
                                 data-wow-duration="0.6s"
                                 data-wow-delay="0.4s"
                             />
                             <IconWithLabel
-                                className={"header-logo wow fadeInUp"}
+                                className={"deco-icon pad-right wow fadeInUp"}
                                 icon={["fab", "linkedin"]}
                                 href={"https://www.linkedin.com/in/shirleywbi"}
                                 data-wow-duration="0.6s"
                                 data-wow-delay="0.4s"
                             />
                             <IconWithLabel
-                                className={"header-logo wow fadeInUp"}
+                                className={"deco-icon pad-right wow fadeInUp"}
                                 icon={["fab", "instagram"]}
                                 href={"https://www.instagram.com/shirleybi.design/"}
                                 data-wow-duration="0.6s"

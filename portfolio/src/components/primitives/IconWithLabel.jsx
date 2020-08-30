@@ -2,15 +2,15 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "../../styles/IconWithLabel.css"
 
-const IconWithLabel = ({icon, label, href}) => {
+const IconWithLabel = ({className, icon, label, href}) => {
     return <span>
         {href ? 
         <a href={href}>
-            <FontAwesomeIcon className={"header-logo"} icon={icon}/>
+            <FontAwesomeIcon className={className} icon={icon}/>
             {label}
         </a> : 
         <>
-            <FontAwesomeIcon className={"header-logo"} icon={icon}/>
+            <FontAwesomeIcon className={className} icon={icon}/>
             {label}
         </>}
     </span>

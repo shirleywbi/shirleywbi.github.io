@@ -1,8 +1,15 @@
-.header-logo {
+.pad-left {
+  margin-left: 8px;
+}
+
+.pad-right {
+  margin-right: 8px;
+}
+
+.deco-icon {
     color: black;
     font-size: 24px;
-    vertical-align: middle;
-    margin-right: 8px; }
-    .fa-envelope.header-logo {
+    vertical-align: middle; }
+    .fa-envelope.deco-icon {
       font-size:20.56px;
     }
