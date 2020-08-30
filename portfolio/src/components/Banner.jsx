@@ -5,7 +5,7 @@ import { Button, Container, Row, Col, Image } from 'react-bootstrap';
 import "../styles/BannerSection.css";
 
 const BannerSection = () => {
-    return <Section className="welcome-area" id="welcome">
+    return <div className="welcome-area" id="welcome">
         <div className="single-welcome-slide bg-img bg-overlay">
             <Container className="h-100">
                 <Row className="h-100 align-items-center">
@@ -82,7 +82,7 @@ const BannerSection = () => {
                 </Row>
             </Container>
         </div>
-    </Section>
+    </div>
 }
 
 export default BannerSection;

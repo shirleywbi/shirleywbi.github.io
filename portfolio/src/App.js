@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navigation from './components/Navigation'
-import BannerSection from './components/BannerSection'
+import Banner from './components/Banner'
 import SkillsSection from './components/SkillsSection'
 import WorkExpSection from './components/WorkExpSection'
 import ProjectSection from './components/ProjectSection'
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Navigation/>
-      <BannerSection/>
+      <Banner/>
       <SkillsSection/>
       <WorkExpSection/>
       <ProjectSection/>
