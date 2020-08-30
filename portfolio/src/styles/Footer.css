@@ -1,0 +1,15 @@
+.footer-content {
+    padding: 13px 0;
+}
+
+.copywrite-text {
+    position: relative;
+    z-index: 1; 
+    margin-bottom: 0;
+    color: gray;
+}
+@media only screen and (max-width: 767px) {
+    .copywrite-text p {
+        font-size: 12px; 
+    } 
+}
