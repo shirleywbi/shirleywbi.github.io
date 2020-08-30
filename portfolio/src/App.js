@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Navigation from './components/Navigation'
+import BannerSection from './components/BannerSection'
+import SkillsSection from './components/SkillsSection'
+import WorkExpSection from './components/WorkExpSection'
+import ProjectSection from './components/ProjectSection'
+import ContactSection from './components/ContactSection'
+import Footer from './components/primitives/Footer'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faDownload, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faEnvelope, faDownload, faChevronDown)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation/>
+      <BannerSection/>
+      <SkillsSection/>
+      <WorkExpSection/>
+      <ProjectSection/>
+      <ContactSection/>
+      <Footer/>
     </div>
   );
 }

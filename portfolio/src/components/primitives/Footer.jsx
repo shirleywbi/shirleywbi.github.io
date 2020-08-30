@@ -6,7 +6,7 @@ const Footer = () => {
         return new Date().getFullYear();
     }
 
-    return <footer className="footer-area bg-black">
+    return <footer className="footer-area bg-dark">
         <div className="container">
             <div className="footer-content d-flex align-items-center justify-content-between">
                 <div className="copywrite-text">
