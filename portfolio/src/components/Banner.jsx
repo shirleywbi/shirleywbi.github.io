@@ -52,7 +52,7 @@ const BannerSection = () => {
                                 data-wow-delay="0.4s"
                             />
                             <Button 
-                                className="btn header-btn wow fadeInUp"
+                                className="btn outlined-btn wow fadeInUp"
                                 href="assets/SBi_Resume.pdf" 
                                 download
                                 data-wow-delay="0.4s"
