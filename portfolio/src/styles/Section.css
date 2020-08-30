@@ -1,0 +1,25 @@
+
+.section-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px; }
+    .section-heading h2 {
+      font-size: 36px;
+      text-transform: capitalize;
+      margin-bottom: 5px;
+      display: block;
+      line-height: 1.2; }
+      @media only screen and (max-width: 767px) {
+        .section-heading h2 {
+          font-size: 24px; } }
+    .section-heading p {
+      margin-bottom: 0; }
+  
+    .header-logo {
+      color: black;
+      font-size: 24px;
+      vertical-align: middle;
+      margin-right: 8px; }
+      .fa-envelope.header-logo {
+        font-size:20.56px;
+      }
