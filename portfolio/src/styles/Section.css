@@ -2,6 +2,7 @@
 .section-heading {
     position: relative;
     z-index: 1;
+    margin-top: 60px;
     margin-bottom: 50px; }
     .section-heading h2 {
       font-size: 36px;
@@ -23,3 +24,7 @@
       .fa-envelope.deco-icon {
         font-size:20.56px;
       }
+
+.list-spacing {
+    margin-bottom: 15px;
+}
