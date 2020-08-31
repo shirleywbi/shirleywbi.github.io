@@ -1,4 +1,15 @@
+.wex {
+    border-radius: 12px;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.wex-content {
+    text-align: center;
+}
+
 .wex-logo {
-    max-height: 35px;
+    max-width: 65px;
+    max-height: 45px;
     object-fit: contain;
 }

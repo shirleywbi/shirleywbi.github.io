@@ -5,15 +5,17 @@ import WorkExperience from './primitives/WorkExperience';
 const WorkExpSection = () => {
     return <Section heading="Work Experience">
         <WorkExperience 
-            dateRange={"May 2020 – Aug 2020"}
-            logo={require("../assets/images/fispan.png")} 
+            dateRange={"2020"}
+            logo={require("../assets/icons/fispan.png")} 
             company="FISPAN" 
-            title="Software Developer Co-op"/>
+            title="Software Developer Co-op"
+            description=""/>
         <WorkExperience 
-            dateRange={"Sep 2019 – May 2020"}
-            logo={require("../assets/images/SAP Concur.png")} 
+            dateRange={"2019-2020"}
+            logo={require("../assets/icons/sap.svg")} 
             company="SAP" 
-            title="Software Engineer Intern"/>
+            title="Software Engineer Intern"
+            description=""/>
     </Section>
 }
 
