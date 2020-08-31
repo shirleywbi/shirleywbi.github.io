@@ -1,0 +1,30 @@
+.project-card {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    vertical-align: center;
+    background-color: lightsteelblue;
+}
+
+.titled-project-card, .image-project-card {
+    border-radius: inherit;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+    animation-duration: 0.4s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.project-card-title {
+    position: relative;
+    top: 33%;
+}

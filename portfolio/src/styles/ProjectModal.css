@@ -1,0 +1,49 @@
+.project-img-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-img {
+    object-fit: contain;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.project-title {
+    display: inline;
+}
+
+.badge-container {
+    display: inline;
+    margin-left: 1.5rem;
+    vertical-align: top;
+}
+
+.badges-btn {
+    background-color: #ebebeb;
+    margin: 0 5px 0 5px;
+    padding: 5px 15px;
+    display: inline-block;
+    color: #636363;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 2px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    letter-spacing: 1px; }
+    .badges-btn:hover, .badges-btn:focus {
+      background-color: #ffae00;
+      color: #ffffff;
+      font-weight: 500; }
+
+.techskills-text {
+    padding-top: 1rem;
+}
+
+ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}

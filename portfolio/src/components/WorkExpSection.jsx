@@ -2,8 +2,8 @@ import React from 'react';
 import Section from './primitives/Section';
 import WorkExperience from './primitives/WorkExperience';
 
-const WorkExpSection = () => {
-    return <Section heading="Work Experience">
+const WorkExpSection = ({id}) => {
+    return <Section heading="Work Experience" id={id}>
         <WorkExperience 
             dateRange={"2020"}
             logo={require("../assets/icons/fispan.png")} 

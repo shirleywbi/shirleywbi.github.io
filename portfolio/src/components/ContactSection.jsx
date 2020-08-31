@@ -3,8 +3,8 @@ import Section from './primitives/Section';
 import IconWithLabel from './primitives/IconWithLabel';
 import "../styles/ContactSection.css";
 
-const ContactSection = () => {
-    return <Section heading="Get In Touch">
+const ContactSection = ({id}) => {
+    return <Section heading="Get In Touch" id={id}>
         <div className={"list-spacing"}>
             <IconWithLabel 
                 className={"deco-icon pad-right"}

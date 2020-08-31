@@ -7,12 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Title -->
-    <title>Shirley W Bi</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="./img/core-img/favicon.png">
-
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker|Walter+Turncoat&display=swap">
@@ -301,38 +295,7 @@
 
                 <!-- Slider Contents -->
                 <div class="all-popups" style="display: none">
-                    <!-- Project: VanGo -->
-                    <div class="popup container full-stack">
-                        <div class="row">
-                            <img class="col-12 col-sm-12 col-md-12 col-lg-7 image-box" src="img/project-img/vango-main-thin.PNG" alt="VanGo: Itinerary Planner">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 center-text text-box container">
-                                <h4 class="popup-title">VanGo: Itinerary Planner</h4>
-                                <p class="popup-subtitle"><em>Tech Stack: ReactJS, Redux, Meteor, MongoDB</em></p>
-                                <p class="popup-text">
-                                    VanGo is an itinerary planner that lets you create, save and share itineraries with local events and attractions in Vancouver.
-                                    My primary focus was designing the UI, creating the Itinerary, Login, and Registration Pages in React and Redux, 
-                                    setting up the database for itinerary data, and integrating user experience feedback.
-                                    <br/>
-                                    <br/>
-                                    <em class="popup-subtitle">Challenges:</em>
-                                    <ul class="popup-text">
-                                        <li class="popup-list-item">
-                                            By having the React components track the changes in the database (Meteor) and state changes (Redux),
-                                            multiple re-renderings caused the map to throttle.
-                                            This was resolved by removing the Meteor tracker and using Meteor methods to decoupling the client from the database.
-                                        </li>
-                                        <li class="popup-list-item">
-                                            We used Meteor Accounts API for login and registration. 
-                                            Although the Blaze template was easy to use, it did not allow for much flexibility (e.g., login callbacks).
-                                            I had to create my own template and learnt to read documentation and the API code to decipher how to use the API.
-                                        </li>
-                                    </ul>
-                                </p>
-                                <a class="btn badges-btn" href="https://vango436.herokuapp.com">WEBAPP</a>
-                                <a class="btn badges-btn" href="https://github.com/shirleywbi/VanGo">GITHUB</a>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <!-- Project: Message Board -->
                     <div class="popup container full-stack">
@@ -530,91 +493,6 @@
         </div>
     </section>
     <!-- Projects Area End -->
-
-    <!-- About Me Start -->
-    <section class="about-me-area section-padding-80-0 clearfix" id="about-me">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h2>About Me</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single About Me Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="about-me-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </div>
-                        <h4>Who Am I</h4>
-                        <p>I am a 4th year Computer Science student at the University of British Columbia 
-                            with a love of 
-                            <b><i>learning</i></b>, 
-                            <b><i>problem solving</i></b>,
-                            and
-                            <b><i>creativity</i></b>.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Single About Me Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="about-me-icon">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </div>
-                        <h4>Background</h4>
-                        <p>My background is in psychology, research, and administration which has allowed me to build my 
-                            <b><i>analytical</i></b>,
-                            <b><i>communication</i></b>, and
-                            <b><i>leadership</i></b>
-                            skills through data analysis, customer service, and managing experiments.</p>
-                    </div>
-                </div>
-
-                <!-- Single About Me Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="about-me-icon">
-                            <i class="fa fa-toolbox" aria-hidden="true"></i>
-                        </div>
-                        <h4>Technical Skills</h4>
-                        <p><b>Languages:</b> Java, TypeScript, JavaScript, C++, Ruby,
-                            <b>Web:</b> HTML, CSS, Node.js, React, Redux, Meteor, PHP,
-                            <b>Mobile:</b> Swift, Kotlin, React Native,
-                            <b>Database:</b> SQL, MongoDB,
-                            <b>Test:</b> JUnit, Mocha/Chai, Selenium, Appium, Watir,
-                            <b>Tools:</b> Git, Docker, Kubernetes
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Me End -->
-
-    <!-- Work Experience Start -->
-    <!-- <section class="work-exp-area section-padding-80-0 bg-gray clearfix" id="work-exp">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h2>Work Experience</h2> 
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 mb-30 center-text">
-                    <p><b>Software Engineer (iXp Intern) at SAP Concur</b></p>
-                    <p>Sept 2019 -</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Work Experience End -->
 
     <!-- Contact Us Start -->
     <section class="contact-us-area section-padding-80-0 bg-gray clearfix" id="contact-us">

@@ -3,7 +3,7 @@ import Section from './primitives/Section';
 import IconWithLabel from './primitives/IconWithLabel';
 import "../styles/SkillsSection.css";
 
-const SkillsSection = () => {
+const SkillsSection = ({id}) => {
     const skills = [
         {
             name: 'Java',
@@ -63,7 +63,7 @@ const SkillsSection = () => {
         }
     }
 
-    return <Section heading="Skills">
+    return <Section heading="Skills" id={id}>
         <div className={"skill-grid"}>
             {skills.map(skill => {
                 return <div className="skill-pill" key={skill.name}>

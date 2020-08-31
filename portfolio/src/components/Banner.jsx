@@ -4,7 +4,7 @@ import { Button, Container, Row, Col, Image } from 'react-bootstrap';
 import "../styles/Banner.css";
 
 const Banner = () => {
-    return <div className="welcome-area" id="welcome">
+    return <div className="welcome-area" id="home">
         <div className="single-welcome-slide bg-img bg-overlay">
             <Container className="h-100">
                 <Row className="h-100 align-items-center">
@@ -65,17 +65,6 @@ const Banner = () => {
                             className="welcome-image" 
                             src={require("../assets/images/portrait.png")}
                             alt=""
-                        />
-                    </Col>
-                    {/* <!-- Down Arrow --> */}
-                    <Col className="nav-down-container">
-                        <IconWithLabel
-                            className={"wow fadeInUp"}
-                            icon={["fa", "chevron-down"]}
-                            href={"#projects"}
-                            aria-hidden="true"
-                            data-wow-duration="0.6s"
-                            data-wow-delay="0.4s"
                         />
                     </Col>
                 </Row>

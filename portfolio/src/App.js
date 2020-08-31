@@ -20,10 +20,10 @@ function App() {
     <div className="App">
       <Navigation/>
       <Banner/>
-      <SkillsSection/>
-      <WorkExpSection/>
-      <ProjectSection/>
-      <ContactSection/>
+      <SkillsSection id="skills"/>
+      <WorkExpSection id="workexp"/>
+      <ProjectSection id="projects"/>
+      <ContactSection id="contact"/>
       <Footer/>
     </div>
   );

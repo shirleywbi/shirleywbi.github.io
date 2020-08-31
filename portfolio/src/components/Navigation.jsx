@@ -3,7 +3,7 @@ import { Image, Nav, Navbar } from 'react-bootstrap';
 import "../styles/Navigation.css"
 
 const Navigation = () => {
-    return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
         <Navbar.Brand href="#home">
             <Image
                 className={"nav-logo"} 
