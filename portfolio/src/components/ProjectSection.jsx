@@ -1,12 +1,14 @@
 import React from 'react';
 import Section from './primitives/Section';
 import Project from './primitives/Project';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../styles/ProjectSection.css';
 
 const projects = [
     {
         title: "VanGo: Itinerary Planner",
         image: require("../assets/images/vango-main-thin.PNG"),
-        techStack: ["React", "Redux", "Meteor", "MongoDB", "Heroku"],
+        techStack: ["React.js", "Redux", "Meteor", "MongoDB", "Heroku"],
         description: 
             <>
                 <div>
@@ -33,6 +35,207 @@ const projects = [
         }, {
             label: "GITHUB",
             href: "https://github.com/shirleywbi/VanGo"
+        }]
+    },
+    {
+        title: "Message Board",
+        image: require("../assets/images/postings-main.png"),
+        techStack: ["MongoDB", "Express", "React", "Redux", "Node.js", "Heroku"],
+        description: 
+            <>
+                <div>
+                    Message Board is a basic message board with add, delete, and filter functionality, storing persistent data on MongoDB.
+                </div>
+                <br/>
+                <em>What I learnt:</em>
+                <ul>
+                    <li>Front-end design using HTML/CSS/JavaScript/React</li>
+                    <li>State management using Redux</li>
+                    <li>SQL vs. noSQL and how to store data on a cloud database service</li>
+                    <li>Heroku delpoyment</li>
+                </ul>
+            </>,
+        links: [{
+            label: "WEBAPP",
+            href: "https://sbi-postings.herokuapp.com"
+        }, {
+            label: "GITHUB",
+            href: "https://github.com/shirleywbi/Message-Board"
+        }]
+    },
+    {
+        title: "Wine Warehouse",
+        image: require("../assets/images/wine-warehouse-inventorymanager.png"),
+        techStack: ["SQL", "PHP"],
+        description: 
+            <>
+                <div>
+                    Designed logical and physical data models of a wine warehouse and created an Inventory Management System 
+                    to view, add, update, delete, and query a wine inventory with multiple user views using PHP and SQL
+                </div>
+                <br/>
+                <em>Challenges:</em>
+                <ul>
+                    <li>
+                        Normalizing the data to 3NF separated some of the related information that I wanted to be together for the user interface.
+                        Many of the tables had to be joined and multiple SQL queries had to be made to provide better usuability in terms of viewing, updating, adding, deleting, and querying the data.
+                    </li>
+                </ul>
+            </>,
+        links: [{
+            label: "GITHUB",
+            href: "https://github.com/shirleywbi/WineWarehouse"
+        }]
+    },
+    {
+        title: "Budget App",
+        image: require("../assets/images/budget-app-main.png"),
+        techStack: ["Java", "JUnit"],
+        description: 
+            <>
+                <div>
+                    Budget App produces dynamic reports on user income and expenses using the observer pattern.
+                    The GUI was created using GridBagLayout in Java Swing and BarChart in JavaFX.
+                </div>
+                <br/>
+                <em>What I learnt:</em>
+                <ul>
+                    <li>
+                        Due to a lot of initial coupling and lack of cohesion, I was able to learn about the importance of writing maintainable code.
+                    </li>
+                    <li>
+                        Learning to draw UML Diagrams helped me to visualize the overall structure of the app.
+                    </li>
+                    <li>
+                        Although combining JavaFX and Java Swing is doable, it can be very error-prone.
+                    </li>
+                </ul>
+            </>,
+        links: [{
+            label: "GITHUB",
+            href: "https://github.com/shirleywbi/BudgetApp"
+        }]
+    },
+    {
+        title: "Insight UBC",
+        image: require("../assets/images/insight-ubc-thin.png"),
+        techStack: ["TypeScript", "JavaScript", "HTML", "Mocha/Chai", "Node.js"],
+        description: 
+            <>
+                <div>
+                    Insight UBC is a NodeJS web app created to query UBC building and course metadata 
+                    by using asynchronous programming, parsing HTML files and JSON objects, using a RESTful design, and testing with Mocha/Chai.
+                </div>
+                <br/>
+                <em>What I learnt:</em>
+                <ul>
+                    <li>
+                        Although less efficient, my teammate and I took it as a learning opportunity to switch our roles part way through this project (data handling vs. data querying) 
+                        which allowed us to get feedback on our own code and have a better understanding of how to write clean and readable code.
+                    </li>
+                </ul>
+            </>,
+        links: [{
+            label: "README",
+            href: "https://github.com/ubccpsc/310/blob/2018sept/project/README.md"
+        }]
+    },
+    {
+        title: "Etch A Sketch",
+        image: require("../assets/images/etch-a-sketch.png"),
+        techStack: ["HTML5 Canvas", "CSS", "JavaScript"],
+        description: 
+            <>
+                <div>
+                    Etch A Sketch is a classic game where you manipulate two "knobs" to move a line.
+                    In this version, it operates by collecting an array of (x, y) positions for every key press to form an image.
+                </div>
+            </>,
+        links: [{
+            label: "GAME",
+            href: "https://shirleywbi.github.io/etch-a-sketch"
+        }]
+    },
+    {
+        title: <>
+            <FontAwesomeIcon className={"hack-win"} icon={["fa", "crown"]}/>
+            Banking on Food
+        </>,
+        image: require("../assets/images/bankingonfood-logo.png"),
+        techStack: ["React Native", "Expo"],
+        description: 
+            <>
+                <div>
+                    Food banks often receive many goods during the holidays but less so during the rest of the year. 
+                    Banking on Food solves this issue by gamifying food bank donations to promote donations year-round.
+                    Using React Native, I implemented an achievements page, and an inventory page that shows what items are urgently needed.
+                </div>
+                <br/>
+                <div>
+                    Banking on Food received 3rd place at the UBC Local Hack Day: Build Day.
+                </div>
+            </>,
+        links: [{
+            label: "DEVPOST",
+            href: "https://devpost.com/software/foodbank-e7vs6n"
+        }, {
+            label: "GITHUB",
+            href: "https://github.com/shirleywbi/foodbank"
+        }]
+    },
+    {
+        title: <>
+            <FontAwesomeIcon className={"hack-win"} icon={["fa", "crown"]}/>
+            Degree Navigator 2.0
+        </>,
+        image: require("../assets/images/cmdf-degree-nav-cropped.png"),
+        techStack: ["React", "TypeScript"],
+        description: 
+            <>
+                <div>
+                    Due to the difficulty of reading and understanding the current UBC degree navigator, 
+                    our team decided to revamp the design with Degree Navigator 2.0.
+                    Degree Navigator 2.0 parses student academic credits to display a user's academic progress towards graduation 
+                    in a modern, legible, and clean interface using React.
+                    The logic for counting the credits was written in TypeScript. 
+                </div>
+                <br/>
+                <div>
+                    Degree Navigator 2.0 received 2nd place at the cmd-f hackathon.
+                </div>
+            </>,
+        links: [{
+            label: "DEVPOST",
+            href: "https://devpost.com/software/degree-navigator-2-0"
+        }]
+    },
+    {
+        title: "Art of Compression",
+        image: require("../assets/images/artofcompression.jpg"),
+        techStack: ["C++"],
+        description: 
+            <>
+                <div>
+                    Art of Compression generates blocky images using an unusual algorithm for lossy image compression with Quad Trees.
+                </div>
+            </>,
+        links: []
+    },
+    {
+        title: "Funcouver (Prototype)",
+        image: require("../assets/images/funcouver-prototype.PNG"),
+        techStack: ["React", "Redux", "Meteor", "MongoDB", "Heroku"],
+        description: 
+            <>
+                <div>
+                    Funcouver is a prototype for an event explorer created using Figma during the UBC BCS Hackathon.
+                    After learning about Figma, an interface design tool, at a cmd-f workshop, our team decided to create a prototype of an event explorer.
+                    The goal was to create a display such that a user would be able to visualize how popular an event was based on the size of its icon.
+                </div>
+            </>,
+        links: [{
+            label: "PROTOTYPE",
+            href: "https://www.figma.com/proto/EhNsd5QRNGQXKlxFaNBTzi7T/BCS-Hackathon-Funcouver-Prototype?node-id=10%3A89&scaling=min-zoom"
         }]
     }
 ];

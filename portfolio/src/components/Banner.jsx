@@ -8,7 +8,6 @@ const Banner = () => {
         <div className="single-welcome-slide bg-img bg-overlay">
             <Container className="h-100">
                 <Row className="h-100 align-items-center">
-                    {/* <!-- Welcome Text --> */}
                     <Col className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 welcome-text-container">
                         <div className="welcome-text">
                             <h2 id="welcome-text-heading">Shirley Bi</h2>
@@ -52,7 +51,7 @@ const Banner = () => {
                             />
                             <Button 
                                 className="btn outlined-btn wow fadeInUp"
-                                href="assets/SBi_Resume.pdf" 
+                                href={require("../assets/SBi_Resume.pdf")}
                                 download
                                 data-wow-delay="0.4s"
                             >
