@@ -5,3 +5,10 @@
 .app-content {
   padding-top: 80px;
 }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -66px;
+  visibility: hidden;
+}
