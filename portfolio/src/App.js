@@ -20,9 +20,9 @@ function App() {
     <div className="App">
       <Navigation/>
       <Banner/>
-      <SkillsSection id="skills"/>
       <WorkExpSection id="workexp"/>
       <ProjectSection id="projects"/>
+      <SkillsSection id="skills"/>
       <ContactSection id="contact"/>
       <Footer/>
     </div>
