@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from './primitives/Section';
-import Project from './primitives/Project';
+import ProjectCard from './primitives/ProjectCard';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/ProjectSection.css';
 
@@ -242,12 +243,21 @@ const projects = [
 
 const ProjectSection = ({id}) => {
     return <Section heading="Projects" id={id}>
-        {projects.map(project => 
-            <Project
-                key={project.title}
-                project={project}
-            />
-        )}
+        <Container fluid="md">
+            <Row className="justify-content-md-center">
+                {projects.map(project => 
+                    <Col 
+                        xs={12} sm={12} md={6} lg={4} xl={4}
+                        key={JSON.stringify(project.title)} 
+                    >
+                        <ProjectCard
+                            project={project}
+                        />
+                    </Col>
+                )}
+            </Row>
+        </Container>
+        <Button>View More</Button>
     </Section>
 }
 

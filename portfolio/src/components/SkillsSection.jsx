@@ -68,7 +68,7 @@ const SkillsSection = ({id}) => {
         <Container>
             <Row className="justify-content-md-center">
                 {skills.map(skill => {
-                    return <Col xs={11} sm={3} md={3} lg={3} xl={3} 
+                    return <Col xs={12} sm={12} md={4} lg={4} xl={4} 
                         className="skill-pill" 
                         key={skill.name}
                     >
