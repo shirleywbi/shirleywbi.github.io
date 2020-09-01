@@ -11,16 +11,16 @@ const SkillsSection = ({id}) => {
             icon: ['fab', 'java']
         },
         {
-            name: 'JavaScript',
-            icon: ['fab', 'js']
-        },
-        {
             name: 'Kotlin',
             path: require("../assets/icons/kotlin.png")
         },
         {
             name: 'Python',
             icon: ['fab', 'python']
+        },
+        {
+            name: 'JavaScript',
+            icon: ['fab', 'js']
         },
         {
             name: 'React',
@@ -68,7 +68,7 @@ const SkillsSection = ({id}) => {
         <Container>
             <Row className="justify-content-md-center">
                 {skills.map(skill => {
-                    return <Col xs={12} sm={12} md={4} lg={4} xl={4} 
+                    return <Col xs={11} sm={11} md={5} lg={3} xl={3} 
                         className="skill-pill" 
                         key={skill.name}
                     >
