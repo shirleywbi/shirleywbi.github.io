@@ -1,7 +1,7 @@
 /* #ffcb00 */
 .banner-container {
   background-color: lightsteelblue;
-  padding: 35px 15px 35px 15px;
+  padding: 70px 15px 100px 15px;
 }
 
 .welcome-area {
@@ -24,6 +24,10 @@
 
 .welcome-text {
   text-align: start;
+}
+
+.contact-container {
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 

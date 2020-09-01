@@ -17,33 +17,35 @@ const Banner = () => {
                             <span><b><i>problem solving</i></b>, and </span>
                             <span><b><i>creativity</i></b>.</span>
                         </div>
-                        <IconWithLabel
-                            className={"deco-icon pad-right wow fadeInUp"}
-                            icon={["fa", "envelope"]}
-                            href={"mailto:s.bi@alumni.ubc.ca"}
-                        />
-                        <IconWithLabel 
-                            className={"deco-icon pad-right wow fadeInUp"}
-                            icon={["fab", "github"]}
-                            href={"https://github.com/shirleywbi"}
-                        />
-                        <IconWithLabel
-                            className={"deco-icon pad-right wow fadeInUp"}
-                            icon={["fab", "linkedin"]}
-                            href={"https://www.linkedin.com/in/shirleywbi"}
-                        />
-                        <IconWithLabel
-                            className={"deco-icon pad-right wow fadeInUp"}
-                            icon={["fab", "instagram"]}
-                            href={"https://www.instagram.com/shirleybi.design/"}
-                        />
-                        <Button 
-                            className="btn outlined-btn wow fadeInUp"
-                            href={require("../assets/SBi_Resume.pdf")}
-                            download
-                        >
-                            Resume <IconWithLabel icon={["fa", "download"]} />
-                        </Button>
+                        <div className={"contact-container"}>
+                            <IconWithLabel
+                                className={"deco-icon pad-right wow fadeInUp"}
+                                icon={["fa", "envelope"]}
+                                href={"mailto:s.bi@alumni.ubc.ca"}
+                            />
+                            <IconWithLabel 
+                                className={"deco-icon pad-right wow fadeInUp"}
+                                icon={["fab", "github"]}
+                                href={"https://github.com/shirleywbi"}
+                            />
+                            <IconWithLabel
+                                className={"deco-icon pad-right wow fadeInUp"}
+                                icon={["fab", "linkedin"]}
+                                href={"https://www.linkedin.com/in/shirleywbi"}
+                            />
+                            <IconWithLabel
+                                className={"deco-icon pad-right wow fadeInUp"}
+                                icon={["fab", "instagram"]}
+                                href={"https://www.instagram.com/shirleybi.design/"}
+                            />
+                            <Button 
+                                className="btn outlined-btn wow fadeInUp"
+                                href={require("../assets/SBi_Resume.pdf")}
+                                download
+                            >
+                                Resume <IconWithLabel icon={["fa", "download"]} />
+                            </Button>
+                        </div>
                     </div>
                 </Col>
                 <Col xs={4}>
