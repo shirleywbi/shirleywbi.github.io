@@ -4,7 +4,7 @@ import { Button, Container, Row, Col, Image } from 'react-bootstrap';
 import "../styles/Banner.css";
 
 const Banner = () => {
-    return <Container className="banner-container" fluid>
+    return <Container id="about" className="banner-container" fluid>
         <Container className="banner">
             <Row className="justify-content-md-center">
                 <Col className={"welcome-text-container"} xs={7}>
