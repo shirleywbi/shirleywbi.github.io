@@ -7,6 +7,79 @@ import '../styles/ProjectSection.css';
 
 const projects = [
     {
+        title: "Stock Market Scripts",
+        image: "TODO",
+        techStack: ["Python"],
+        description: 
+            <div>
+                A collection of Python scripts to calculate market indicators, screen stocks and determine stop loss price using yfinance.
+            </div>,
+        links: [{
+            label: "GITHUB",
+            href: "https://github.com/shirleywbi/StockScreener"
+        }]
+    },
+    {
+        title: "Hnefatafl",
+        image: "TODO",
+        techStack: ["Kotlin", "Android Studio"],
+        description: 
+            <>
+                <div>
+                    Hnefatafl is a Nordic and Celtic strategy board, also known as "Viking Chess".
+                    For this project, I created the prototype, designed the assets, and implemented the game logic.
+                </div>
+            </>,
+        links: [{
+            label: "GITHUB",
+            href: "https://github.com/shirleywbi/Hnefatafl"
+        }]
+    },
+    {
+        title: "Amplify",
+        image: "TODO",
+        techStack: ["React Native", "Expo", "Node.js"],
+        description: 
+            <div>
+                Amplify is a public speaking coach that helps users make more impactful conversations. 
+                Built using the Google Cloud Speech-to-Text API, it finds filler words, calculates speech duration, and suggests more concise wording."
+            </div>,
+        links: [{
+            label: "DEVPOST",
+            href: "https://devpost.com/software/amplify-b7gar8"
+        },
+        {
+            label: "GITHUB",
+            href: "https://github.com/NobleTan/cmd-f-2020"
+        }]
+    },
+    {
+        title: "SAP University of HANA and Analytics",
+        image: "TODO",
+        techStack: ["React", "Redux", "Node.js", "MongoDB"],
+        description: 
+            <>
+                <div>
+                    VanGo is an itinerary planner that lets you create, save and share itineraries with local events and attractions in Vancouver.
+                    My primary focus was designing the UI, creating the Itinerary, Login, and Registration Pages in React and Redux, 
+                    setting up the database for itinerary data, and integrating user experience feedback.
+                </div>
+                <br/>
+                <em>Challenges:</em>
+                <ul>
+                    <li>
+                        Having both the database (MongoDB via Meteor) and state (Redux) track changes in the React Components led to mutliple re-renders, thus throttling.
+                        I was able to resolve this by decoupling the client from the database by removing the Meteor tracker.
+                    </li>
+                    <li>
+                        Implementing authentication with Blaze is simple but lacked flexibility (e.g., login callbacks).
+                        Therefore, using Meteor Accounts API and documentation, I created my own template to work with callbacks.
+                    </li>
+                </ul>
+            </>,
+        links: []
+    },
+    {
         title: "VanGo: Itinerary Planner",
         image: require("../assets/images/vango-main-thin.PNG"),
         techStack: ["React.js", "Redux", "Meteor", "MongoDB", "Heroku"],
@@ -117,30 +190,30 @@ const projects = [
             href: "https://github.com/shirleywbi/BudgetApp"
         }]
     },
-    {
-        title: "Insight UBC",
-        image: require("../assets/images/insight-ubc-thin.png"),
-        techStack: ["TypeScript", "JavaScript", "HTML", "Mocha/Chai", "Node.js"],
-        description: 
-            <>
-                <div>
-                    Insight UBC is a NodeJS web app created to query UBC building and course metadata 
-                    by using asynchronous programming, parsing HTML files and JSON objects, using a RESTful design, and testing with Mocha/Chai.
-                </div>
-                <br/>
-                <em>What I learnt:</em>
-                <ul>
-                    <li>
-                        Although less efficient, my teammate and I took it as a learning opportunity to switch our roles part way through this project (data handling vs. data querying) 
-                        which allowed us to get feedback on our own code and have a better understanding of how to write clean and readable code.
-                    </li>
-                </ul>
-            </>,
-        links: [{
-            label: "README",
-            href: "https://github.com/ubccpsc/310/blob/2018sept/project/README.md"
-        }]
-    },
+    // {
+    //     title: "Insight UBC",
+    //     image: require("../assets/images/insight-ubc-thin.png"),
+    //     techStack: ["TypeScript", "JavaScript", "HTML", "Mocha/Chai", "Node.js"],
+    //     description: 
+    //         <>
+    //             <div>
+    //                 Insight UBC is a NodeJS web app created to query UBC building and course metadata 
+    //                 by using asynchronous programming, parsing HTML files and JSON objects, using a RESTful design, and testing with Mocha/Chai.
+    //             </div>
+    //             <br/>
+    //             <em>What I learnt:</em>
+    //             <ul>
+    //                 <li>
+    //                     Although less efficient, my teammate and I took it as a learning opportunity to switch our roles part way through this project (data handling vs. data querying) 
+    //                     which allowed us to get feedback on our own code and have a better understanding of how to write clean and readable code.
+    //                 </li>
+    //             </ul>
+    //         </>,
+    //     links: [{
+    //         label: "README",
+    //         href: "https://github.com/ubccpsc/310/blob/2018sept/project/README.md"
+    //     }]
+    // },
     {
         title: "Etch A Sketch",
         image: require("../assets/images/etch-a-sketch.png"),
@@ -222,23 +295,23 @@ const projects = [
             </>,
         links: []
     },
-    {
-        title: "Funcouver (Prototype)",
-        image: require("../assets/images/funcouver-prototype.PNG"),
-        techStack: ["React", "Redux", "Meteor", "MongoDB", "Heroku"],
-        description: 
-            <>
-                <div>
-                    Funcouver is a prototype for an event explorer created using Figma during the UBC BCS Hackathon.
-                    After learning about Figma, an interface design tool, at a cmd-f workshop, our team decided to create a prototype of an event explorer.
-                    The goal was to create a display such that a user would be able to visualize how popular an event was based on the size of its icon.
-                </div>
-            </>,
-        links: [{
-            label: "PROTOTYPE",
-            href: "https://www.figma.com/proto/EhNsd5QRNGQXKlxFaNBTzi7T/BCS-Hackathon-Funcouver-Prototype?node-id=10%3A89&scaling=min-zoom"
-        }]
-    }
+    // {
+    //     title: "Funcouver (Prototype)",
+    //     image: require("../assets/images/funcouver-prototype.PNG"),
+    //     techStack: ["React", "Redux", "Meteor", "MongoDB", "Heroku"],
+    //     description: 
+    //         <>
+    //             <div>
+    //                 Funcouver is a prototype for an event explorer created using Figma during the UBC BCS Hackathon.
+    //                 After learning about Figma, an interface design tool, at a cmd-f workshop, our team decided to create a prototype of an event explorer.
+    //                 The goal was to create a display such that a user would be able to visualize how popular an event was based on the size of its icon.
+    //             </div>
+    //         </>,
+    //     links: [{
+    //         label: "PROTOTYPE",
+    //         href: "https://www.figma.com/proto/EhNsd5QRNGQXKlxFaNBTzi7T/BCS-Hackathon-Funcouver-Prototype?node-id=10%3A89&scaling=min-zoom"
+    //     }]
+    // }
 ];
 
 const ProjectSection = ({id}) => {
@@ -257,7 +330,6 @@ const ProjectSection = ({id}) => {
                 )}
             </Row>
         </Container>
-        <Button>View More</Button>
     </Section>
 }
 
