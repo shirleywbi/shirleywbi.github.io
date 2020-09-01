@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from './primitives/Section';
 import IconWithLabel from './primitives/IconWithLabel';
+import { Container, Row, Col } from 'react-bootstrap';
 import "../styles/SkillsSection.css";
 
 const SkillsSection = ({id}) => {
@@ -64,13 +65,18 @@ const SkillsSection = ({id}) => {
     }
 
     return <Section heading="Skills" id={id}>
-        <div className={"skill-grid"}>
-            {skills.map(skill => {
-                return <div className="skill-pill" key={skill.name}>
-                    {renderSkill(skill)}
-                </div>
-            })}
-        </div>
+        <Container>
+            <Row className="justify-content-md-center">
+                {skills.map(skill => {
+                    return <Col xs={11} sm={3} md={3} lg={3} xl={3} 
+                        className="skill-pill" 
+                        key={skill.name}
+                    >
+                        {renderSkill(skill)}
+                    </Col>
+                })}
+            </Row>
+        </Container>
     </Section>
 }
 
