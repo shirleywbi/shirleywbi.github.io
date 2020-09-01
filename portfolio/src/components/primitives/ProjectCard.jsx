@@ -6,7 +6,7 @@ import '../../styles/ProjectCard.css';
 const ProjectCard = ({ project }) => {
     const [modalShow, setModalShow] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
-    const { title, image } = project;
+    const { title, thumbnail, image } = project;
 
     return <>
         <ProjectModal
@@ -29,7 +29,7 @@ const ProjectCard = ({ project }) => {
                 }
                 <Card.Img 
                     className={"image-project-card"} 
-                    src={image} 
+                    src={thumbnail ? thumbnail : image} 
                     alt=""
                     variant="top"
                 />
