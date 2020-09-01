@@ -1,0 +1,20 @@
+.wex {
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.wex-content {
+    text-align: left;
+}
+
+.wex-date {
+    text-align: right;
+}
+
+.wex-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
