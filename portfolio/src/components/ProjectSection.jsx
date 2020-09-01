@@ -21,7 +21,7 @@ const projects = [
     },
     {
         title: "Hnefatafl",
-        image: "TODO",
+        image: require("../assets/images/Hnefatafl-thumbnail.svg"),
         techStack: ["Kotlin", "Android Studio"],
         description: 
             <>

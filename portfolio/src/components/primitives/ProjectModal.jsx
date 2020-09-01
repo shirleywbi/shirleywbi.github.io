@@ -7,6 +7,7 @@ const ProjectModal = (props) => {
 
     return <Modal
         {...props}
+        className={"project-modal"}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
