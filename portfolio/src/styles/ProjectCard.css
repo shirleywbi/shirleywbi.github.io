@@ -1,0 +1,46 @@
+.project-card-container {
+    text-align: center;
+    text-align: -webkit-center;
+    margin-bottom: 1.5rem;
+}
+
+.project-card {
+    height: 15rem;
+    border-radius: 10px;
+    max-width: 348px;
+}
+
+.project-card-overlay {
+    border-radius: inherit;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+    animation-duration: 0.4s;
+    background-color: #343A40;
+    color: #C4C7CB;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    text-transform: uppercase;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.image-project-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+.project-type-container {
+    margin-left: 10px;
+}

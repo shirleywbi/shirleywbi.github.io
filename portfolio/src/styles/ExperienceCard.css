@@ -1,0 +1,26 @@
+.wex {
+    border: 1px solid lightgrey;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.wex-content {
+    text-align: left;
+}
+
+.wex-date {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.wex-logo {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 15px;
+    object-fit: contain;
+    object-position: top;
+}
+
+.card-subtitle {
+    margin-bottom: 10px;
+}

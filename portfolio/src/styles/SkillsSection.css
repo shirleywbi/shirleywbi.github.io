@@ -1,0 +1,18 @@
+.skills-logo {
+    max-width: 21px;
+    max-height: 21px;
+    object-fit: contain;
+}
+
+.skill-pill {
+    border: 2px solid black;
+    border-radius: 12px;
+    height: 3rem;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
