@@ -6,7 +6,8 @@
     position: relative;
     z-index: 1;
     margin-top: 60px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    text-transform: uppercase; }
     .section-heading h2 {
       font-size: 36px;
       text-transform: capitalize;
@@ -18,15 +19,6 @@
           font-size: 24px; } }
     .section-heading p {
       margin-bottom: 0; }
-  
-    .deco-icon {
-      color: black;
-      font-size: 24px;
-      vertical-align: middle;
-      margin-right: 8px; }
-      .fa-envelope.deco-icon {
-        font-size:20.56px;
-      }
 
 .list-spacing {
     margin-bottom: 15px;

@@ -1,6 +1,5 @@
-/* #ffcb00 */
 .banner-container {
-  background-color: lightsteelblue;
+  background-color: #9A9DA0;
   padding: 70px 15px 100px 15px;
 }
 
@@ -11,6 +10,20 @@
 .welcome-image {
   align-self: center;
   max-width: 85%;
+}
+
+#welcome-text-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+#welcome-text-subheading {
+  margin-bottom: 1.2rem;
+}
+
+#welcome-text-content {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .welcome-text-container {
@@ -36,7 +49,7 @@
   display: inline-block;
   color: black;
   border: 2px solid black;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 12px;
@@ -46,3 +59,8 @@
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   letter-spacing: 1px; }
+
+.outlined-btn:hover {
+  background-color: #343A40;
+  color: #C4C7CB;
+}

@@ -23,7 +23,7 @@ function App() {
       <WorkExpSection id="workexp"/>
       <ProjectSection id="projects"/>
       <SkillsSection id="skills"/>
-      <ContactSection id="contact"/>
+      {/* <ContactSection id="contact"/> */}
       <Footer/>
     </div>
   );

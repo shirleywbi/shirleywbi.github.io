@@ -328,7 +328,7 @@ const ProjectSection = ({id}) => {
             <Row className="justify-content-md-center">
                 {projects.map(project => 
                     <Col 
-                        xs={12} sm={12} md={6} lg={4} xl={4}
+                        xs={12} sm={12} md={6} lg={6} xl={4}
                         key={JSON.stringify(project.title)} 
                     >
                         <ProjectCard

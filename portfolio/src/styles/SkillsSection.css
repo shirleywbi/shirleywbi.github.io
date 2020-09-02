@@ -4,10 +4,6 @@
     object-fit: contain;
 }
 
-.pad-right {
-    margin-right: 8px;
-}
-
 .skill-pill {
     border: 2px solid black;
     border-radius: 12px;

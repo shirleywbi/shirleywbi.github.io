@@ -7,6 +7,7 @@
 .project-card {
     height: 15rem;
     border-radius: 10px;
+    max-width: 348px;
 }
 
 .project-card-overlay {
@@ -15,10 +16,11 @@
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
     animation-duration: 0.4s;
-    background-color: lightsteelblue;
+    background-color: #9A9DA0;
     display: flex;
     align-items: center;
     place-content: center;
+    text-transform: uppercase;
 }
 
 @keyframes fadeInOpacity {

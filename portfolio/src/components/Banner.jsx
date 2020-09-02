@@ -1,6 +1,6 @@
 import React from 'react';
 import IconWithLabel from './primitives/IconWithLabel';
-import { Button, Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import "../styles/Banner.css";
 
 const Banner = () => {
@@ -12,7 +12,7 @@ const Banner = () => {
                     <Col className={"welcome-text-container"} xs={7}>
                         <div className="welcome-text">
                             <h1 id="welcome-text-heading">Shirley Bi</h1>
-                            <h2>Developer | Designer</h2>
+                            <h2 id="welcome-text-subheading">Developer | Designer</h2>
                             <div id="welcome-text-content">
                                 <span>Hello! I am a 4th year Computer Science student at the University of British Columbia with a love of </span>
                                 <span><b><i>learning</i></b>, </span>
@@ -21,32 +21,34 @@ const Banner = () => {
                             </div>
                             <div className={"contact-container"}>
                                 <IconWithLabel
-                                    className={"deco-icon pad-right wow fadeInUp"}
+                                    className={"deco-icon pad-right"}
                                     icon={["fa", "envelope"]}
                                     href={"mailto:s.bi@alumni.ubc.ca"}
+                                    size={"fa-10x"}
                                 />
                                 <IconWithLabel 
-                                    className={"deco-icon pad-right wow fadeInUp"}
+                                    className={"deco-icon pad-right"}
                                     icon={["fab", "github"]}
                                     href={"https://github.com/shirleywbi"}
+                                    size={"fa-10x"}
                                 />
                                 <IconWithLabel
-                                    className={"deco-icon pad-right wow fadeInUp"}
+                                    className={"deco-icon pad-right"}
                                     icon={["fab", "linkedin"]}
                                     href={"https://www.linkedin.com/in/shirleywbi"}
                                 />
                                 <IconWithLabel
-                                    className={"deco-icon pad-right wow fadeInUp"}
+                                    className={"deco-icon pad-right"}
                                     icon={["fab", "instagram"]}
                                     href={"https://www.instagram.com/shirleybi.design/"}
                                 />
-                                <Button 
-                                    className="btn outlined-btn wow fadeInUp"
+                                <button 
+                                    className="btn outlined-btn"
                                     href={require("../assets/SBi_Resume.pdf")}
                                     download
                                 >
                                     Resume <IconWithLabel icon={["fa", "download"]} />
-                                </Button>
+                                </button>
                             </div>
                         </div>
                     </Col>

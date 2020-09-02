@@ -1,4 +1,4 @@
-..modal-content {
+.modal-content {
     padding: 10px;
 }
 
@@ -42,8 +42,9 @@
     transition-duration: 500ms;
     letter-spacing: 1px; }
     .badges-btn:hover, .badges-btn:focus {
-      background-color: #ffae00;
-      color: #ffffff;
+      background-color: #343A40;
+      color: #C4C7CB;
+      text-decoration: none;
       font-weight: 500; }
 
 .techskills-text {
