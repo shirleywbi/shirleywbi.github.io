@@ -7,7 +7,7 @@ const ExperienceCard = ({dateRange, logo, company, title, description}) => {
         <Card.Body>
             <Container>
                 <Row>
-                    <Col xs={2}>
+                    <Col xs={0} sm={2}>
                         <img className={"wex-logo"} src={logo} alt={company}/>
                     </Col>
                     <Col className={"wex-content"}>
@@ -15,7 +15,7 @@ const ExperienceCard = ({dateRange, logo, company, title, description}) => {
                         <Card.Subtitle>{title}</Card.Subtitle>
                         <Card.Text>{description}</Card.Text>
                     </Col>
-                    <Col className={"wex-date"} xs={2}>
+                    <Col className={"wex-date"} xs={0} sm={2} md={2}>
                         <div>{dateRange}</div>
                     </Col>
                 </Row>
