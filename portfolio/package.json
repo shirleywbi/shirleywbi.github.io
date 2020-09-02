@@ -1,6 +1,6 @@
 {
-  "homepage": "https://shirleywbi.github.io/",
-  "name": "sbi_portfolio",
+  "homepage": "https://shirleywbi.github.io",
+  "name": "sbi-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
