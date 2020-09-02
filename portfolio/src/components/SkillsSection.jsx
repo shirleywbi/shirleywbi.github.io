@@ -78,13 +78,15 @@ const SkillsSection = ({id}) => {
 
     return <Section heading="Skills" id={id}>
         <Container>
-            <Row className="justify-content-md-center">
+            <Row>
                 {skills.map(skill => {
-                    return <Col xs={11} sm={11} md={5} lg={3} xl={3} 
-                        className="skill-pill" 
+                    return <Col xs={12} sm={12} md={6} lg={3} xl={3} 
+                        className="skill-pill-container" 
                         key={skill.name}
                     >
-                        {renderSkill(skill)}
+                        <div className={"skill-pill"}>
+                            {renderSkill(skill)}
+                        </div>
                     </Col>
                 })}
             </Row>
