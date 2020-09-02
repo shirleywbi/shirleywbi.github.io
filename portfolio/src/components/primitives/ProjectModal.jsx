@@ -3,7 +3,7 @@ import { Modal } from 'react-bootstrap';
 import "../../styles/ProjectModal.css";
 
 const ProjectModal = (props) => {
-    const { title, image, techStack, description, links } = props.project;
+    const { title, image, video, techStack, description, links } = props.project;
 
     return <Modal
         {...props}
@@ -12,15 +12,26 @@ const ProjectModal = (props) => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
     >
-        {/* <Modal.Header closeButton>
-        </Modal.Header> */}
+        <Modal.Header className={"project-modal-header"} closeButton>
+        </Modal.Header>
         <Modal.Body>
             <div className={"project-img-container"}>
-                <img
-                    className={"project-img"} 
-                    src={image} 
-                    alt="" 
-                />
+                { video ? 
+                    <iframe 
+                        title={title}
+                        width="560" 
+                        height="315" 
+                        src={video} 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                    /> :
+                    <img
+                        className={"project-img"} 
+                        src={image} 
+                        alt="" 
+                    />
+                }
             </div>
             <h4 className="project-title">{title}</h4>
             <div className={"badge-container"}>

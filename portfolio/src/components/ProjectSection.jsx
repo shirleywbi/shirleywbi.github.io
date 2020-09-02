@@ -82,7 +82,7 @@ const projects = [
     {
         title: "VanGo: Itinerary Planner",
         thumbnail: require("../assets/images/thumbnails/VanGo-thumbnail.svg"),
-        image: require("../assets/images/vango-main-thin.PNG"),
+        image: require("../assets/images/vango-main.png"),
         techStack: ["React.js", "Redux", "Meteor", "MongoDB", "Heroku"],
         description: 
             <>
@@ -168,6 +168,7 @@ const projects = [
         title: "Budget App",
         thumbnail: require("../assets/images/thumbnails/Budget App-thumbnail.svg"),
         image: require("../assets/images/budget-app-main.png"),
+        video: "https://www.youtube.com/embed/9rM2OuaGV9o",
         techStack: ["Java", "JUnit"],
         description: 
             <>

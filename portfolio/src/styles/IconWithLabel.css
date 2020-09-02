@@ -11,5 +11,16 @@
     font-size: 35px;
     vertical-align: middle; }
     .fa-envelope.deco-icon {
-      font-size:35px;
+      font-size: 35px;
     }
+  @media screen and (max-width: 767px) {
+    .deco-icon {
+      font-size: 25px; }
+      .fa-envelope.deco-icon {
+        font-size: 25px;
+      }
+  }
+
+a > .deco-icon:hover {
+  color: #343A40;
+}
