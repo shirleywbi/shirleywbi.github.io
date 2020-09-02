@@ -33,7 +33,9 @@ const ProjectModal = (props) => {
                     />
                 }
             </div>
-            <h4 className="project-title">{title}</h4>
+            <div className={"project-title-container"}>
+                <h4 className="project-title">{title}</h4>
+            </div>
             <div className={"badge-container"}>
                 {links.map(link => 
                     <a
