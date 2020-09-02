@@ -36,11 +36,11 @@ const SkillsSection = ({id}) => {
         },
         {
             name: 'Expo',
-            icon: require("../assets/icons/expo.svg")
+            path: require("../assets/icons/expo.png")
         },
         {
             name: 'Selenium',
-            icon: require("../assets/icons/expo.svg")
+            path: require("../assets/icons/selenium.png")
         },
         {
             name: 'SQL',
