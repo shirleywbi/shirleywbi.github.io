@@ -5,7 +5,7 @@ import "../styles/Banner.css";
 
 const Banner = () => {
     return <>
-        <a class="anchor" id="about" href="none"> </a>
+        <a className="anchor" id="about" href="none"> </a>
         <Container className="banner-container" fluid>
             <Container className="banner">
                 <Row className="justify-content-md-center">
@@ -24,13 +24,11 @@ const Banner = () => {
                                     className={"deco-icon pad-right"}
                                     icon={["fa", "envelope"]}
                                     href={"mailto:s.bi@alumni.ubc.ca"}
-                                    size={"fa-10x"}
                                 />
                                 <IconWithLabel 
                                     className={"deco-icon pad-right"}
                                     icon={["fab", "github"]}
                                     href={"https://github.com/shirleywbi"}
-                                    size={"fa-10x"}
                                 />
                                 <IconWithLabel
                                     className={"deco-icon pad-right"}
