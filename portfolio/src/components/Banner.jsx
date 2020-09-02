@@ -5,7 +5,7 @@ import "../styles/Banner.css";
 
 const Banner = () => {
     return <>
-        <a class="anchor" id="about"></a>
+        <a class="anchor" id="about" href="none"> </a>
         <Container className="banner-container" fluid>
             <Container className="banner">
                 <Row className="justify-content-md-center">

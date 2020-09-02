@@ -31,6 +31,18 @@ const SkillsSection = ({id}) => {
             icon: ['fab', 'node-js']
         },
         {
+            name: 'React Native',
+            icon: ['fab', 'react']
+        },
+        {
+            name: 'Expo',
+            icon: require("../assets/icons/expo.svg")
+        },
+        {
+            name: 'Selenium',
+            icon: require("../assets/icons/expo.svg")
+        },
+        {
             name: 'SQL',
             icon: ['fa', 'database']
         },

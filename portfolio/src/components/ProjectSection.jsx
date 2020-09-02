@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from './primitives/Section';
 import ProjectCard from './primitives/ProjectCard';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/ProjectSection.css';
 
