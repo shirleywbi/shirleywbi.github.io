@@ -8,7 +8,7 @@ import '../styles/ProjectSection.css';
 const projects = [
     {
         title: "Stock Market Scripts",
-        image: "TODO",
+        image: require("../assets/images/thumbnails/Stock Market Scripts-thumbnail.svg"),
         techStack: ["Python"],
         description: 
             <div>
@@ -21,7 +21,7 @@ const projects = [
     },
     {
         title: "Hnefatafl",
-        image: require("../assets/images/Hnefatafl-thumbnail.svg"),
+        image: require("../assets/images/thumbnails/Hnefatafl-thumbnail.svg"),
         techStack: ["Kotlin", "Android Studio"],
         description: 
             <>
@@ -37,7 +37,7 @@ const projects = [
     },
     {
         title: "Amplify",
-        image: "TODO",
+        image: require("../assets/images/thumbnails/Amplify-thumbnail.svg"),
         techStack: ["React Native", "Expo", "Node.js"],
         description: 
             <div>
@@ -55,7 +55,7 @@ const projects = [
     },
     {
         title: "SAP University of HANA and Analytics",
-        image: "TODO",
+        image: require("../assets/images/thumbnails/UHA-thumbnail.svg"),
         techStack: ["React", "Redux", "Node.js", "MongoDB"],
         description: 
             <>
@@ -81,6 +81,7 @@ const projects = [
     },
     {
         title: "VanGo: Itinerary Planner",
+        thumbnail: require("../assets/images/thumbnails/VanGo-thumbnail.svg"),
         image: require("../assets/images/vango-main-thin.PNG"),
         techStack: ["React.js", "Redux", "Meteor", "MongoDB", "Heroku"],
         description: 
@@ -113,6 +114,7 @@ const projects = [
     },
     {
         title: "Message Board",
+        thumbnail: require("../assets/images/thumbnails/Message Board-thumbnail.svg"),
         image: require("../assets/images/postings-main.png"),
         techStack: ["MongoDB", "Express", "React", "Redux", "Node.js", "Heroku"],
         description: 
@@ -139,6 +141,7 @@ const projects = [
     },
     {
         title: "Wine Warehouse",
+        thumbnail: require("../assets/images/thumbnails/Wine Warehouse-thumbnail.svg"),
         image: require("../assets/images/wine-warehouse-inventorymanager.png"),
         techStack: ["SQL", "PHP"],
         description: 
@@ -163,6 +166,7 @@ const projects = [
     },
     {
         title: "Budget App",
+        thumbnail: require("../assets/images/thumbnails/Budget App-thumbnail.svg"),
         image: require("../assets/images/budget-app-main.png"),
         techStack: ["Java", "JUnit"],
         description: 
@@ -216,6 +220,7 @@ const projects = [
     // },
     {
         title: "Etch A Sketch",
+        thumbnail: require("../assets/images/thumbnails/Etch-a-Sketch-thumbnail.svg"),
         image: require("../assets/images/etch-a-sketch.png"),
         techStack: ["HTML5 Canvas", "CSS", "JavaScript"],
         description: 
@@ -235,7 +240,8 @@ const projects = [
             <FontAwesomeIcon className={"hack-win"} icon={["fa", "crown"]}/>
             Banking on Food
         </>,
-        image: require("../assets/images/bankingonfood-logo.png"),
+        thumbnail: require("../assets/images/thumbnails/Banking on Food-thumbnail.svg"),
+        image: require("../assets/images/thumbnails/Banking on Food-thumbnail.svg"),
         techStack: ["React Native", "Expo"],
         description: 
             <>
@@ -262,6 +268,7 @@ const projects = [
             <FontAwesomeIcon className={"hack-win"} icon={["fa", "crown"]}/>
             Degree Navigator 2.0
         </>,
+        thumbnail: require("../assets/images/thumbnails/Degree Navigator 2.0-thumbnail.svg"),
         image: require("../assets/images/cmdf-degree-nav-cropped.png"),
         techStack: ["React", "TypeScript"],
         description: 
@@ -285,6 +292,7 @@ const projects = [
     },
     {
         title: "Art of Compression",
+        thumbnail: require("../assets/images/thumbnails/Art of Compression-thumbnail.svg"),
         image: require("../assets/images/artofcompression.jpg"),
         techStack: ["C++"],
         description: 
