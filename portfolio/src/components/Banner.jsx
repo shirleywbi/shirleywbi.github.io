@@ -40,13 +40,13 @@ const Banner = () => {
                                     icon={["fab", "instagram"]}
                                     href={"https://www.instagram.com/shirleybi.design/"}
                                 />
-                                <button 
+                                <a 
                                     className="btn outlined-btn"
                                     href={require("../assets/SBi_Resume.pdf")}
-                                    download
+                                    download="SBi_Resume.pdf"
                                 >
                                     Resume <IconWithLabel icon={["fa", "download"]} />
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </Col>
