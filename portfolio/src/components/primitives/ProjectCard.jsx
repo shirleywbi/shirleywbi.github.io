@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import ProjectModal from './ProjectModal';
 import { Card } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../styles/ProjectCard.css';
 
 const ProjectCard = ({ project }) => {
     const [modalShow, setModalShow] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
-    const { title, thumbnail, image } = project;
+    const { title, type, thumbnail, image } = project;
 
     return <>
         <ProjectModal
@@ -25,8 +26,10 @@ const ProjectCard = ({ project }) => {
                     showTitle ?
                     <Card.ImgOverlay className={"project-card-overlay"}>
                         <h4>{title}</h4>
+                        <div className={"project-type-container"}><FontAwesomeIcon icon={type}/></div>
                     </Card.ImgOverlay> : null
                 }
+
                 <Card.Img 
                     className={"image-project-card"} 
                     src={thumbnail ? thumbnail : image} 

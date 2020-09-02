@@ -12,8 +12,8 @@ import Footer from './components/primitives/Footer'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faDownload, faChevronDown, faDatabase, faCrown } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faEnvelope, faDownload, faChevronDown, faDatabase, faCrown)
+import { faEnvelope, faDownload, faChevronDown, faDatabase, faCrown, faMobileAlt, faWindowMaximize, faGamepad, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faEnvelope, faDownload, faChevronDown, faDatabase, faCrown, faMobileAlt, faWindowMaximize, faGamepad, faLaptopCode)
 
 function App() {
   return (

@@ -5,9 +5,17 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/ProjectSection.css';
 
+const types = {
+    WEB: ['fa', 'window-maximize'],
+    MOBILE: ['fa', 'mobile-alt'],
+    GAME: ['fa', 'gamepad'],
+    OTHER: ['fa', 'laptop-code']
+}
+
 const projects = [
     {
         title: "Stock Market Scripts",
+        type: types.OTHER,
         image: require("../assets/images/thumbnails/Stock Market Scripts-thumbnail.svg"),
         techStack: ["Python"],
         description: 
@@ -21,6 +29,7 @@ const projects = [
     },
     {
         title: "Hnefatafl",
+        type: types.GAME,
         image: require("../assets/images/thumbnails/Hnefatafl-thumbnail.svg"),
         techStack: ["Kotlin", "Android Studio"],
         description: 
@@ -37,6 +46,7 @@ const projects = [
     },
     {
         title: "Amplify",
+        type: types.MOBILE,
         image: require("../assets/images/thumbnails/Amplify-thumbnail.svg"),
         techStack: ["React Native", "Expo", "Node.js"],
         description: 
@@ -55,6 +65,7 @@ const projects = [
     },
     {
         title: "SAP University of HANA and Analytics",
+        type: types.WEB,
         image: require("../assets/images/thumbnails/UHA-thumbnail.svg"),
         techStack: ["React", "Redux", "Node.js", "MongoDB"],
         description: 
@@ -81,6 +92,7 @@ const projects = [
     },
     {
         title: "VanGo: Itinerary Planner",
+        type: types.WEB,
         thumbnail: require("../assets/images/thumbnails/VanGo-thumbnail.svg"),
         image: require("../assets/images/vango-main.png"),
         techStack: ["React.js", "Redux", "Meteor", "MongoDB", "Heroku"],
@@ -114,6 +126,7 @@ const projects = [
     },
     {
         title: "Message Board",
+        type: types.WEB,
         thumbnail: require("../assets/images/thumbnails/Message Board-thumbnail.svg"),
         image: require("../assets/images/postings-main.png"),
         techStack: ["MongoDB", "Express", "React", "Redux", "Node.js", "Heroku"],
@@ -141,6 +154,7 @@ const projects = [
     },
     {
         title: "Wine Warehouse",
+        type: types.WEB,
         thumbnail: require("../assets/images/thumbnails/Wine Warehouse-thumbnail.svg"),
         image: require("../assets/images/wine-warehouse-inventorymanager.png"),
         techStack: ["SQL", "PHP"],
@@ -166,6 +180,7 @@ const projects = [
     },
     {
         title: "Budget App",
+        type: types.OTHER,
         thumbnail: require("../assets/images/thumbnails/Budget App-thumbnail.svg"),
         image: require("../assets/images/budget-app-main.png"),
         video: "https://www.youtube.com/embed/9rM2OuaGV9o",
@@ -197,6 +212,7 @@ const projects = [
     },
     // {
     //     title: "Insight UBC",
+    //     type: types.WEB,
     //     image: require("../assets/images/insight-ubc-thin.png"),
     //     techStack: ["TypeScript", "JavaScript", "HTML", "Mocha/Chai", "Node.js"],
     //     description: 
@@ -221,6 +237,7 @@ const projects = [
     // },
     {
         title: "Etch A Sketch",
+        type: types.GAME,
         thumbnail: require("../assets/images/thumbnails/Etch-a-Sketch-thumbnail.svg"),
         image: require("../assets/images/etch-a-sketch.png"),
         techStack: ["HTML5 Canvas", "CSS", "JavaScript"],
@@ -241,6 +258,7 @@ const projects = [
             <FontAwesomeIcon className={"hack-win"} icon={["fa", "crown"]}/>
             Banking on Food
         </>,
+        type: types.MOBILE,
         thumbnail: require("../assets/images/thumbnails/Banking on Food-thumbnail.svg"),
         image: require("../assets/images/thumbnails/Banking on Food-thumbnail.svg"),
         techStack: ["React Native", "Expo"],
@@ -269,6 +287,7 @@ const projects = [
             <FontAwesomeIcon className={"hack-win"} icon={["fa", "crown"]}/>
             Degree Navigator 2.0
         </>,
+        type: types.WEB,
         thumbnail: require("../assets/images/thumbnails/Degree Navigator 2.0-thumbnail.svg"),
         image: require("../assets/images/cmdf-degree-nav-cropped.png"),
         techStack: ["React", "TypeScript"],
@@ -293,6 +312,7 @@ const projects = [
     },
     {
         title: "Art of Compression",
+        type: types.OTHER,
         thumbnail: require("../assets/images/thumbnails/Art of Compression-thumbnail.svg"),
         image: require("../assets/images/artofcompression.jpg"),
         techStack: ["C++"],
