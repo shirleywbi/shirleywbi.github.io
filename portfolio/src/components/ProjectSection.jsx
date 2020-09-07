@@ -71,22 +71,10 @@ const projects = [
         description: 
             <>
                 <div>
-                    VanGo is an itinerary planner that lets you create, save and share itineraries with local events and attractions in Vancouver.
-                    My primary focus was designing the UI, creating the Itinerary, Login, and Registration Pages in React and Redux, 
-                    setting up the database for itinerary data, and integrating user experience feedback.
+                    SAP University of HANA and Analytics is an online learning platform that integrates in-person training and skill-sharing.
+                    Having built 80-90% of the web app, I focused on developing the front-end with our UI/UX designer, implementing the backend, integrating APIs, 
+                    and single sign-on with Oauth 2.0.
                 </div>
-                <br/>
-                <em>Challenges:</em>
-                <ul>
-                    <li>
-                        Having both the database (MongoDB via Meteor) and state (Redux) track changes in the React Components led to mutliple re-renders, thus throttling.
-                        I was able to resolve this by decoupling the client from the database by removing the Meteor tracker.
-                    </li>
-                    <li>
-                        Implementing authentication with Blaze is simple but lacked flexibility (e.g., login callbacks).
-                        Therefore, using Meteor Accounts API and documentation, I created my own template to work with callbacks.
-                    </li>
-                </ul>
             </>,
         links: []
     },
