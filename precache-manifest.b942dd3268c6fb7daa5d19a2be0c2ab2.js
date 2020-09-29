@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c088d02a7958859455382d9005ed3c4",
+    "revision": "cee1d4a8abd2b42224ee46455d48f2ee",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "4cc4322de4373f9f0224",
-    "url": "/static/css/main.09509723.chunk.css"
+    "revision": "2af353eafdff95be396c",
+    "url": "/static/css/main.fea1c11b.chunk.css"
   },
   {
     "revision": "e2ef42434e0ced6d8cf2",
@@ -20,64 +20,64 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.a6f5bb5f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4cc4322de4373f9f0224",
-    "url": "/static/js/main.94a7eb31.chunk.js"
+    "revision": "2af353eafdff95be396c",
+    "url": "/static/js/main.ba839c9c.chunk.js"
   },
   {
     "revision": "782a2b90cac443a01104",
     "url": "/static/js/runtime-main.aa6effb7.js"
   },
   {
-    "revision": "e106f9ab7a6ba6e33eba477c8555e0a0",
-    "url": "/static/media/Amplify-thumbnail.e106f9ab.svg"
+    "revision": "fd4f799d5a041587cec1807b2f14e790",
+    "url": "/static/media/Amplify-thumbnail.fd4f799d.svg"
   },
   {
-    "revision": "9b6d141ae665d2822e1a0090f217c5a0",
-    "url": "/static/media/Art of Compression-thumbnail.9b6d141a.svg"
+    "revision": "69a647e62962febfc9a0f1cb10a90118",
+    "url": "/static/media/Art of Compression-thumbnail.69a647e6.svg"
   },
   {
-    "revision": "21a15c82e75b0cac2605e6cd13ea389c",
-    "url": "/static/media/Banking on Food-thumbnail.21a15c82.svg"
+    "revision": "ce7bee6c914b373755c97c9ca0d1b691",
+    "url": "/static/media/Banking on Food-thumbnail.ce7bee6c.svg"
   },
   {
-    "revision": "b1bb9dc456854b4ab6e7a95c89ccc83a",
-    "url": "/static/media/Budget App-thumbnail.b1bb9dc4.svg"
+    "revision": "8f5677cf7ee743ea820cc0634dba7f47",
+    "url": "/static/media/Budget App-thumbnail.8f5677cf.svg"
   },
   {
-    "revision": "2c63dfb807c25af2ff8b921d93c44759",
-    "url": "/static/media/Degree Navigator 2.0-thumbnail.2c63dfb8.svg"
+    "revision": "9be46437aa5e3d8693bcbd567330761b",
+    "url": "/static/media/Degree Navigator 2.0-thumbnail.9be46437.svg"
   },
   {
-    "revision": "1fb9fc4d7ce6acc4c0dc40dc934ba851",
-    "url": "/static/media/Etch-a-Sketch-thumbnail.1fb9fc4d.svg"
+    "revision": "2aef588dd16c16d2bd411a66dcbba553",
+    "url": "/static/media/Etch-a-Sketch-thumbnail.2aef588d.svg"
   },
   {
-    "revision": "791ddcd2023d27ee243fdc1a5a3d3bb1",
-    "url": "/static/media/Hnefatafl-thumbnail.791ddcd2.svg"
+    "revision": "98ab1be6ba4031f75d28091b00a817fc",
+    "url": "/static/media/Hnefatafl-thumbnail.98ab1be6.svg"
   },
   {
-    "revision": "1d60152133907d0c9c9258c0b7cb38cf",
-    "url": "/static/media/Message Board-thumbnail.1d601521.svg"
+    "revision": "ce73d730e89a83de88c32fb3bd3c721d",
+    "url": "/static/media/Message Board-thumbnail.ce73d730.svg"
   },
   {
-    "revision": "72dfd76820b2614909631e203e5f050d",
-    "url": "/static/media/SBi_Resume.72dfd768.pdf"
+    "revision": "0d61740623af231b72bcc0007f0b1654",
+    "url": "/static/media/SBi_Resume.0d617406.pdf"
   },
   {
-    "revision": "d5728a3a172bf4949ff159d462837d29",
-    "url": "/static/media/Stock Market Scripts-thumbnail.d5728a3a.svg"
+    "revision": "2982513d96702e2f0851b6b72884182a",
+    "url": "/static/media/Stock Market Scripts-thumbnail.2982513d.svg"
   },
   {
-    "revision": "de37e3b07c33423079220cdba863630c",
-    "url": "/static/media/UHA-thumbnail.de37e3b0.svg"
+    "revision": "5d002fd01c2eaa8196ac1428985c75d2",
+    "url": "/static/media/UHA-thumbnail.5d002fd0.svg"
   },
   {
-    "revision": "7fcad122b1484725f51640dd1d09b0cb",
-    "url": "/static/media/VanGo-thumbnail.7fcad122.svg"
+    "revision": "a27a79791a34eac9f288e5fc4ccbd2f0",
+    "url": "/static/media/VanGo-thumbnail.a27a7979.svg"
   },
   {
-    "revision": "d248304e498d8a796434cc7c2dc48e5c",
-    "url": "/static/media/Wine Warehouse-thumbnail.d248304e.svg"
+    "revision": "8b10c917bf44e07d7d0fd7cd0fc063a5",
+    "url": "/static/media/Wine Warehouse-thumbnail.8b10c917.svg"
   },
   {
     "revision": "b4094204672292e101c469ee66b0e701",
@@ -120,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/postings-main.83af71db.png"
   },
   {
-    "revision": "76ac1b8b7c2812c02b910668f6336d4e",
-    "url": "/static/media/sap.76ac1b8b.svg"
+    "revision": "1c356c0842248c497ed1489c1927ff76",
+    "url": "/static/media/sap.1c356c08.svg"
   },
   {
     "revision": "165a90b6400e3dffca83c4ffc62a3fb0",
