@@ -5,6 +5,20 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const experiences = [
     {
+        company: "Amazon",
+        title: "Software Development Engineer",
+        dateRange: "2021",
+        logo: require("../assets/icons/amazon.png"),
+        description: ""
+    },
+    {
+        company: "UBC Tapestry",
+        title: "Software Engineer",
+        dateRange: "2020-2021",
+        logo: require("../assets/icons/tapestry.png"),
+        description: "Implemented features, bug fixes, integration and end-to-end tests for a graph-based learning tool that helps students make visual connections between content, built using Vue, PHP, and Jest."
+    },
+    {
         company: "FISPAN",
         title: "Software Developer Co-op",
         dateRange: "2020",
