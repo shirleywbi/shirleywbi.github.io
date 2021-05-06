@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cee1d4a8abd2b42224ee46455d48f2ee",
+    "revision": "5181e788c8fe0b4eb280986b604bdbf2",
     "url": "/index.html"
   },
   {
-    "revision": "e2ef42434e0ced6d8cf2",
-    "url": "/static/css/2.11829350.chunk.css"
+    "revision": "f656141f919f5755c7ba",
+    "url": "/static/css/2.b0704b7a.chunk.css"
   },
   {
-    "revision": "2af353eafdff95be396c",
+    "revision": "eb86aa3bdadbaf0133d9",
     "url": "/static/css/main.fea1c11b.chunk.css"
   },
   {
-    "revision": "e2ef42434e0ced6d8cf2",
-    "url": "/static/js/2.a6f5bb5f.chunk.js"
+    "revision": "f656141f919f5755c7ba",
+    "url": "/static/js/2.4ae4bf77.chunk.js"
   },
   {
-    "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/static/js/2.a6f5bb5f.chunk.js.LICENSE.txt"
+    "revision": "189688707f34b0f0dfeb233cdc689b4b",
+    "url": "/static/js/2.4ae4bf77.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2af353eafdff95be396c",
-    "url": "/static/js/main.ba839c9c.chunk.js"
+    "revision": "eb86aa3bdadbaf0133d9",
+    "url": "/static/js/main.0c1c79b5.chunk.js"
   },
   {
     "revision": "782a2b90cac443a01104",
@@ -60,10 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Message Board-thumbnail.ce73d730.svg"
   },
   {
-    "revision": "0d61740623af231b72bcc0007f0b1654",
-    "url": "/static/media/SBi_Resume.0d617406.pdf"
-  },
-  {
     "revision": "2982513d96702e2f0851b6b72884182a",
     "url": "/static/media/Stock Market Scripts-thumbnail.2982513d.svg"
   },
@@ -78,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8b10c917bf44e07d7d0fd7cd0fc063a5",
     "url": "/static/media/Wine Warehouse-thumbnail.8b10c917.svg"
+  },
+  {
+    "revision": "b8ad586d3a9b3e5471b4850d39580d1f",
+    "url": "/static/media/amazon.b8ad586d.png"
   },
   {
     "revision": "b4094204672292e101c469ee66b0e701",
@@ -126,6 +126,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "165a90b6400e3dffca83c4ffc62a3fb0",
     "url": "/static/media/selenium.165a90b6.png"
+  },
+  {
+    "revision": "0072408353a9ba5da4ecaf0954e7abb5",
+    "url": "/static/media/tapestry.00724083.png"
   },
   {
     "revision": "615db8b7bfe95adc19143ab3c33e3f11",
