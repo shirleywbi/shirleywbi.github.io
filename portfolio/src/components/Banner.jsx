@@ -12,9 +12,9 @@ const Banner = () => {
                     <Col className={"welcome-text-container"} xs={7}>
                         <div className="welcome-text">
                             <h1 id="welcome-text-heading">Shirley Bi</h1>
-                            <h2 id="welcome-text-subheading">Developer | Designer</h2>
+                            <h2 id="welcome-text-subheading">Developer</h2>
                             <div id="welcome-text-content">
-                                <span>Hello! I am a 4th year Computer Science student at the University of British Columbia with a love of </span>
+                                <span>Hello! I am a developer and artist with a love of </span>
                                 <span><b><i>learning</i></b>, </span>
                                 <span><b><i>problem solving</i></b>, and </span>
                                 <span><b><i>creativity</i></b>.</span>
@@ -40,13 +40,15 @@ const Banner = () => {
                                     icon={["fab", "instagram"]}
                                     href={"https://www.instagram.com/shirleybi.design/"}
                                 />
-                                <a 
+                                {
+                                // TODO: Re-enable if actively looking for work.
+                                /* <a 
                                     className="btn outlined-btn"
                                     href={require("../assets/SBi_Resume.pdf")}
                                     download="SBi_Resume.pdf"
                                 >
                                     Resume <IconWithLabel icon={["fa", "download"]} />
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </Col>

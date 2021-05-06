@@ -7,7 +7,7 @@ const experiences = [
     {
         company: "Amazon",
         title: "Software Development Engineer",
-        dateRange: "2021",
+        dateRange: "2021-Present",
         logo: require("../assets/icons/amazon.png"),
         description: ""
     },

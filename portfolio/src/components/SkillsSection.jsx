@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import "../styles/SkillsSection.css";
 
 const SkillsSection = ({id}) => {
+    // TODO: Other skills - PHP, Vue, Jest
     const skills = [
         {
             name: 'Java',
