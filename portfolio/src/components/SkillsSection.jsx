@@ -3,59 +3,9 @@ import Section from './primitives/Section';
 import IconWithLabel from './primitives/IconWithLabel';
 import { Container, Row, Col } from 'react-bootstrap';
 import "../styles/SkillsSection.css";
+import skills from "../data/skills";
 
 const SkillsSection = ({id}) => {
-    // TODO: Other skills - PHP, Vue, Jest
-    const skills = [
-        {
-            name: 'Java',
-            icon: ['fab', 'java']
-        },
-        {
-            name: 'Kotlin',
-            path: require("../assets/icons/kotlin.png")
-        },
-        {
-            name: 'Python',
-            icon: ['fab', 'python']
-        },
-        {
-            name: 'JavaScript',
-            icon: ['fab', 'js']
-        },
-        {
-            name: 'React',
-            icon: ['fab', 'react']
-        },
-        {
-            name: 'Node.js',
-            icon: ['fab', 'node-js']
-        },
-        {
-            name: 'React Native',
-            icon: ['fab', 'react']
-        },
-        {
-            name: 'Expo',
-            path: require("../assets/icons/expo.png")
-        },
-        {
-            name: 'Selenium',
-            path: require("../assets/icons/selenium.png")
-        },
-        {
-            name: 'SQL',
-            icon: ['fa', 'database']
-        },
-        {
-            name: 'MongoDB',
-            path: require("../assets/icons/mongodb.png")
-        },
-        {
-            name: 'Git',
-            icon: ['fab', 'git-alt']
-        }
-    ];
 
     const renderSkill = (skill) => {
         if ('icon' in skill) {
