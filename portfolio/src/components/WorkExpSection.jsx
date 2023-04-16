@@ -30,7 +30,7 @@ const experiences = [
         company: "SAP",
         title: "Software Engineer Intern",
         dateRange: "2019-2020",
-        logo: require("../assets/icons/sap.svg"),
+        logo: require("../assets/icons/sap.png"),
         description: "Created and automated end-to-end testing frameworks using Rspec-Watir and TestCafe, adding accessibility testing based on WCAG 2.0 and email notification testing with the Gmail API. " +
             "Implemented web and mobile tests using the Page Object Model and various selenium frameworks; increasing code coverage by 50% and improving mobile test speeds by 13%. " +
             "Created career development opportunities for 150+ interns as an intern committee lead." 
