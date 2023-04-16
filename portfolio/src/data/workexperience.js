@@ -4,7 +4,7 @@ const experiences = [
         title: "Software Development Engineer",
         dateRange: "2021-Present",
         logo: require("../assets/icons/amazon.png"),
-        description: ""
+        description: "Collaborating with cross-functional teams to troubleshoot, scope, design, and implement new payment solutions."
     },
     {
         company: "UBC Tapestry",
