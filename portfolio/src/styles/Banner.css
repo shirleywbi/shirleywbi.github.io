@@ -1,5 +1,6 @@
 .banner-container {
-  background-color: #9A9DA0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/background/joel-filipe-VuwAfoHpxgs-unsplash.jpg");
+  background-size: cover;
   padding: 70px 15px 100px 15px;
 }
 
