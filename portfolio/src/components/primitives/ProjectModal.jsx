@@ -19,7 +19,7 @@ const ProjectModal = (props) => {
                 { video ? 
                     <iframe 
                         title={title}
-                        width="560" 
+                        width="inherit"
                         height="315" 
                         src={video} 
                         frameborder="0" 
